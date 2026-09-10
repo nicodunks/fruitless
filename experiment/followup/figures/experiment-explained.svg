@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="921.6pt" height="518.4pt" viewBox="0 0 921.6 518.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-10T09:21:23.947878</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 518.4 
+L 921.6 518.4 
+L 921.6 0 
+L 0 0 
+z
+" style="fill: #fbfcfa"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 53.4528 270.6048 
+L 259.8912 270.6048 
+Q 273.7152 270.6048 273.7152 262.8288 
+L 273.7152 146.7072 
+Q 273.7152 138.9312 259.8912 138.9312 
+L 53.4528 138.9312 
+Q 39.6288 138.9312 39.6288 146.7072 
+L 39.6288 262.8288 
+Q 39.6288 270.6048 53.4528 270.6048 
+z
+" clip-path="url(#p6d53a58b6c)" style="fill: #eef3f0; stroke: #dce3df; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 366.7968 270.6048 
+L 573.2352 270.6048 
+Q 587.0592 270.6048 587.0592 262.8288 
+L 587.0592 146.7072 
+Q 587.0592 138.9312 573.2352 138.9312 
+L 366.7968 138.9312 
+Q 352.9728 138.9312 352.9728 146.7072 
+L 352.9728 262.8288 
+Q 352.9728 270.6048 366.7968 270.6048 
+z
+" clip-path="url(#p6d53a58b6c)" style="fill: #eef3f0; stroke: #dce3df; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 680.1408 270.6048 
+L 868.1472 270.6048 
+Q 881.9712 270.6048 881.9712 262.8288 
+L 881.9712 146.7072 
+Q 881.9712 138.9312 868.1472 138.9312 
+L 680.1408 138.9312 
+Q 666.3168 138.9312 666.3168 146.7072 
+L 666.3168 262.8288 
+Q 666.3168 270.6048 680.1408 270.6048 
+z
+" clip-path="url(#p6d53a58b6c)" style="fill: #eef3f0; stroke: #dce3df; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 273.875344 204.768 
+Q 311.042322 204.768 346.308642 204.768 
+" clip-path="url(#p6d53a58b6c)" style="fill: none; stroke: #63747a; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 339.508642 201.368 
+L 346.308642 204.768 
+L 339.508642 208.168 
+z
+" clip-path="url(#p6d53a58b6c)" style="fill: #63747a; stroke: #63747a; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 587.219344 204.768 
+Q 624.386322 204.768 659.652642 204.768 
+" clip-path="url(#p6d53a58b6c)" style="fill: none; stroke: #63747a; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 652.852642 201.368 
+L 659.652642 204.768 
+L 652.852642 208.168 
+z
+" clip-path="url(#p6d53a58b6c)" style="fill: #63747a; stroke: #63747a; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 329.9328 374.2848 
+L 444.2112 374.2848 
+Q 458.0352 374.2848 458.0352 366.5088 
+L 458.0352 312.5952 
+Q 458.0352 304.8192 444.2112 304.8192 
+L 329.9328 304.8192 
+Q 316.1088 304.8192 316.1088 312.5952 
+L 316.1088 366.5088 
+Q 316.1088 374.2848 329.9328 374.2848 
+z
+" clip-path="url(#p6d53a58b6c)" style="fill: #e9efec; stroke: #dce3df; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 495.8208 374.2848 
+L 610.0992 374.2848 
+Q 623.9232 374.2848 623.9232 366.5088 
+L 623.9232 312.5952 
+Q 623.9232 304.8192 610.0992 304.8192 
+L 495.8208 304.8192 
+Q 481.9968 304.8192 481.9968 312.5952 
+L 481.9968 366.5088 
+Q 481.9968 374.2848 495.8208 374.2848 
+z
+" clip-path="url(#p6d53a58b6c)" style="fill: #e3f1eb; stroke: #187d70; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 387.072 289.714219 
+Q 387.072 298.081761 387.072 304.548645 
+" clip-path="url(#p6d53a58b6c)" style="fill: none; stroke: #63747a; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 390.472 297.748645 
+L 387.072 304.548645 
+L 383.672 297.748645 
+z
+" clip-path="url(#p6d53a58b6c)" style="fill: #63747a; stroke: #63747a; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 552.96 289.714219 
+Q 552.96 298.081761 552.96 304.548645 
+" clip-path="url(#p6d53a58b6c)" style="fill: none; stroke: #63747a; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 556.36 297.748645 
+L 552.96 304.548645 
+L 549.56 297.748645 
+z
+" clip-path="url(#p6d53a58b6c)" style="fill: #63747a; stroke: #63747a; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 470.016 264.384 
+L 470.016 287.712 
+" clip-path="url(#p6d53a58b6c)" style="fill: none; stroke: #63747a; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 387.072 287.712 
+L 552.96 287.712 
+" clip-path="url(#p6d53a58b6c)" style="fill: none; stroke: #63747a; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 50.688 401.76 
+L 870.912 401.76 
+" clip-path="url(#p6d53a58b6c)" style="fill: none; stroke: #dce3df; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #20343b; font: 13px 'DejaVu Sans'" transform="translate(91.440438 189.846844)">Artificial stimulation</text>
+    <text style="fill: #20343b; font: 13px 'DejaVu Sans'" transform="translate(97.888641 208.355187)">of candidate male</text>
+    <text style="fill: #20343b; font: 13px 'DejaVu Sans'" transform="translate(81.458875 226.863531)">or female sensory cells</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #20343b; font: 13px 'DejaVu Sans'" transform="translate(394.312328 189.846844)">Full connectome model</text>
+    <text style="fill: #20343b; font: 13px 'DejaVu Sans'" transform="translate(414.823891 208.355187)">166,606 neurons</text>
+    <text style="fill: #20343b; font: 13px 'DejaVu Sans'" transform="translate(390.560609 226.863531)">25.6 million connections</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #20343b; font: 13px 'DejaVu Sans'" transform="translate(724.552047 189.846844)">Count spikes in</text>
+    <text style="fill: #20343b; font: 13px 'DejaVu Sans'" transform="translate(708.918531 208.355187)">8 candidate P1 cells</text>
+    <text style="fill: #20343b; font: 13px 'DejaVu Sans'" transform="translate(713.773219 226.863531)">linked to courtship</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #20343b; font: 12px 'DejaVu Sans'; text-anchor: middle" x="387.072" y="342.86325" transform="rotate(-0 387.072 342.86325)">mAL intact</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #187d70; font: 12px 'DejaVu Sans'" transform="translate(517.971563 334.320938)">mAL output</text>
+    <text style="fill: #187d70; font: 12px 'DejaVu Sans'" transform="translate(529.755938 351.405562)">blocked</text>
+   </g>
+  </g>
+  <g id="text_6">
+   <text style="fill: #20343b; font: 700 21px 'DejaVu Sans'; text-anchor: start" x="50.688" y="33.696" transform="rotate(-0 50.688 33.696)">What did we change — and what did we measure?</text>
+  </g>
+  <g id="text_7">
+   <text style="fill: #63747a; font: 11px 'DejaVu Sans'; text-anchor: start" x="50.688" y="60.6528" transform="rotate(-0 50.688 60.6528)">The same network and input signal were tested twice. Only mAL output transmission changed.</text>
+  </g>
+  <g id="text_8">
+   <text style="fill: #63747a; font: 700 10px 'DejaVu Sans'; text-anchor: start" x="50.688" y="106.272" transform="rotate(-0 50.688 106.272)">INPUT</text>
+  </g>
+  <g id="text_9">
+   <text style="fill: #63747a; font: 700 10px 'DejaVu Sans'; text-anchor: start" x="364.032" y="106.272" transform="rotate(-0 364.032 106.272)">INTERVENTION</text>
+  </g>
+  <g id="text_10">
+   <text style="fill: #63747a; font: 700 10px 'DejaVu Sans'; text-anchor: start" x="677.376" y="106.272" transform="rotate(-0 677.376 106.272)">MEASUREMENT</text>
+  </g>
+  <g id="text_11">
+   <text style="fill: #63747a; font: 11px 'DejaVu Sans'" transform="translate(50.688 290.086187)">Matched inputs in each pair.</text>
+   <text style="fill: #63747a; font: 11px 'DejaVu Sans'" transform="translate(50.688 305.747094)">No direct stimulation of P1</text>
+   <text style="fill: #63747a; font: 11px 'DejaVu Sans'" transform="translate(50.688 321.408)">in this sensory experiment.</text>
+  </g>
+  <g id="text_12">
+   <text style="fill: #187d70; font: 700 12px 'DejaVu Sans'" transform="translate(677.376 287.23875)">Male-cue response:</text>
+   <text style="fill: #187d70; font: 700 12px 'DejaVu Sans'" transform="translate(677.376 304.323375)">0 spikes → 1–7 spikes</text>
+   <text style="fill: #187d70; font: 700 12px 'DejaVu Sans'" transform="translate(677.376 321.408)">across the final checks.</text>
+  </g>
+  <g id="text_13">
+   <text style="fill: #20343b; font: 700 12px 'DejaVu Sans'; text-anchor: start" x="50.688" y="425.088" transform="rotate(-0 50.688 425.088)">What this supports</text>
+  </g>
+  <g id="text_14">
+   <text style="fill: #20343b; font: 12px 'DejaVu Sans'" transform="translate(50.688 447.795187)">Removing an inhibitory brake can reveal</text>
+   <text style="fill: #20343b; font: 12px 'DejaVu Sans'" transform="translate(50.688 463.968)">a previously suppressed male-cue response.</text>
+  </g>
+  <g id="text_15">
+   <text style="fill: #20343b; font: 700 12px 'DejaVu Sans'; text-anchor: start" x="506.88" y="425.088" transform="rotate(-0 506.88 425.088)">What it does not establish</text>
+  </g>
+  <g id="text_16">
+   <text style="fill: #20343b; font: 12px 'DejaVu Sans'" transform="translate(506.88 447.795187)">A fly choosing males over females.</text>
+   <text style="fill: #20343b; font: 12px 'DejaVu Sans'" transform="translate(506.88 463.968)">Female-cue responses remained stronger.</text>
+  </g>
+  <g id="text_17">
+   <text style="fill: #63747a; font: 9px 'DejaVu Sans'; text-anchor: start" x="50.688" y="495.072" transform="rotate(-0 50.688 495.072)">Schematic, not an anatomical pathway map. Candidate identities, relay signs and neuron dynamics are modeled assumptions; see RESULTS.md.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6d53a58b6c">
+   <rect x="0" y="0" width="921.6" height="518.4"/>
+  </clipPath>
+ </defs>
+</svg>

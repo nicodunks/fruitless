@@ -1,0 +1,50 @@
+[
+  {
+    "inhibitory_reversal_mV": -70.0,
+    "condition": "no_input",
+    "drive_mV": 0.0,
+    "seed": 1,
+    "primary_Hz": 0.0,
+    "mAL_Hz": 0.0,
+    "network_spikes": 0,
+    "voltage_min_mV": -52.0,
+    "voltage_max_before_external_mV": -52.0,
+    "seconds": 12.869488000869751
+  },
+  {
+    "inhibitory_reversal_mV": -70.0,
+    "condition": "mAL_only",
+    "drive_mV": 0.0,
+    "seed": 1,
+    "primary_Hz": 0.0,
+    "mAL_Hz": 148.66666666666666,
+    "network_spikes": 5575,
+    "voltage_min_mV": -68.95963029537644,
+    "voltage_max_before_external_mV": -52.0,
+    "seconds": 12.25888204574585
+  },
+  {
+    "inhibitory_reversal_mV": -80.0,
+    "condition": "no_input",
+    "drive_mV": 0.0,
+    "seed": 1,
+    "primary_Hz": 0.0,
+    "mAL_Hz": 0.0,
+    "network_spikes": 0,
+    "voltage_min_mV": -52.0,
+    "voltage_max_before_external_mV": -52.0,
+    "seconds": 11.716681957244873
+  },
+  {
+    "inhibitory_reversal_mV": -80.0,
+    "condition": "mAL_only",
+    "drive_mV": 0.0,
+    "seed": 1,
+    "primary_Hz": 0.0,
+    "mAL_Hz": 148.66666666666666,
+    "network_spikes": 5575,
+    "voltage_min_mV": -77.50068171522264,
+    "voltage_max_before_external_mV": -52.0,
+    "seconds": 10.775554656982422
+  }
+]

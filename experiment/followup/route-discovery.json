@@ -1,0 +1,2050 @@
+{
+  "plan": {
+    "question": "Does literature-supported excitatory vAB3 routing permit mAL-mediated disinhibition? No behavioral preference decoder.",
+    "populations": [
+      "candidate_male",
+      "candidate_female",
+      "vAB3"
+    ],
+    "settings": [
+      "conservative",
+      "vAB3_excitatory",
+      "vAB3_and_female_input_excitatory"
+    ],
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "conditions": [
+      "intact",
+      "mAL_blocked"
+    ],
+    "model": "unchanged run.py LIF, probe.py only instruments voltages",
+    "readouts": [
+      "R71G01_related",
+      "P1_related",
+      "mAL",
+      "vAB3"
+    ],
+    "note": "Third sign setting duplicates directvAB3 pathway only insofar femaleinputs remaininactive; retain all outcomes."
+  },
+  "results": [
+    {
+      "key": "conservative__candidate_male__intact__1",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "intact",
+      "seed": 1,
+      "events": 1151,
+      "total_spikes": 3162,
+      "seconds": 3.570276708,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -2.186337344879288,
+          "min_voltage_mV": -62.6057558869873,
+          "net_exc_arrivals": 49.775,
+          "net_inh_arrivals": -941.0500000000004
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 2.406877813599735,
+          "mean_voltage_deviation_mV": -2.6002019638940936,
+          "min_voltage_mV": -77.41293701328803,
+          "net_exc_arrivals": 227.975,
+          "net_inh_arrivals": -6708.349999999999
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -23.764286479545728,
+          "min_voltage_mV": -148.78743401502356,
+          "net_exc_arrivals": 72.6,
+          "net_inh_arrivals": -90616.62500000001
+        },
+        "vAB3": {
+          "spikes": 80,
+          "mean_hz": 80.0,
+          "peak_depolarization_mV": 7.337783979366449,
+          "mean_voltage_deviation_mV": 1.6984978051839843,
+          "min_voltage_mV": -53.91384286344157,
+          "net_exc_arrivals": 8520.875000000005,
+          "net_inh_arrivals": -2427.1499999999987
+        }
+      }
+    },
+    {
+      "key": "conservative__candidate_male__mAL_blocked__1",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "mAL_blocked",
+      "seed": 1,
+      "events": 1151,
+      "total_spikes": 3162,
+      "seconds": 4.0767408750000005,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -2.186337344879288,
+          "min_voltage_mV": -62.6057558869873,
+          "net_exc_arrivals": 49.775,
+          "net_inh_arrivals": -941.0500000000004
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 2.406877813599735,
+          "mean_voltage_deviation_mV": -2.6002019638940936,
+          "min_voltage_mV": -77.41293701328803,
+          "net_exc_arrivals": 227.975,
+          "net_inh_arrivals": -6708.349999999999
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -23.764286479545728,
+          "min_voltage_mV": -148.78743401502356,
+          "net_exc_arrivals": 72.6,
+          "net_inh_arrivals": -90616.62500000001
+        },
+        "vAB3": {
+          "spikes": 80,
+          "mean_hz": 80.0,
+          "peak_depolarization_mV": 7.337783979366449,
+          "mean_voltage_deviation_mV": 1.6984978051839843,
+          "min_voltage_mV": -53.91384286344157,
+          "net_exc_arrivals": 8520.875000000005,
+          "net_inh_arrivals": -2427.1499999999987
+        }
+      }
+    },
+    {
+      "key": "conservative__candidate_male__intact__2",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "intact",
+      "seed": 2,
+      "events": 1133,
+      "total_spikes": 2811,
+      "seconds": 4.82036175,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -1.7746344594996868,
+          "min_voltage_mV": -59.98650313154053,
+          "net_exc_arrivals": 45.925000000000004,
+          "net_inh_arrivals": -776.0500000000004
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 2.478826048983507,
+          "mean_voltage_deviation_mV": -2.3686490300476035,
+          "min_voltage_mV": -75.77499574983753,
+          "net_exc_arrivals": 214.22500000000005,
+          "net_inh_arrivals": -6108.849999999999
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -22.891113746992684,
+          "min_voltage_mV": -154.49118288456205,
+          "net_exc_arrivals": 94.6,
+          "net_inh_arrivals": -87392.24999999999
+        },
+        "vAB3": {
+          "spikes": 78,
+          "mean_hz": 78.0,
+          "peak_depolarization_mV": 7.311096279873617,
+          "mean_voltage_deviation_mV": 2.1347616739164,
+          "min_voltage_mV": -53.566149894932074,
+          "net_exc_arrivals": 8083.350000000007,
+          "net_inh_arrivals": -2189.8249999999994
+        }
+      }
+    },
+    {
+      "key": "conservative__candidate_male__mAL_blocked__2",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "mAL_blocked",
+      "seed": 2,
+      "events": 1133,
+      "total_spikes": 2811,
+      "seconds": 4.197597125,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -1.7746344594996868,
+          "min_voltage_mV": -59.98650313154053,
+          "net_exc_arrivals": 45.925000000000004,
+          "net_inh_arrivals": -776.0500000000004
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 2.478826048983507,
+          "mean_voltage_deviation_mV": -2.3686490300476035,
+          "min_voltage_mV": -75.77499574983753,
+          "net_exc_arrivals": 214.22500000000005,
+          "net_inh_arrivals": -6108.849999999999
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -22.891113746992684,
+          "min_voltage_mV": -154.49118288456205,
+          "net_exc_arrivals": 94.6,
+          "net_inh_arrivals": -87392.24999999999
+        },
+        "vAB3": {
+          "spikes": 78,
+          "mean_hz": 78.0,
+          "peak_depolarization_mV": 7.311096279873617,
+          "mean_voltage_deviation_mV": 2.1347616739164,
+          "min_voltage_mV": -53.566149894932074,
+          "net_exc_arrivals": 8083.350000000007,
+          "net_inh_arrivals": -2189.8249999999994
+        }
+      }
+    },
+    {
+      "key": "conservative__candidate_male__intact__3",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "intact",
+      "seed": 3,
+      "events": 1035,
+      "total_spikes": 2915,
+      "seconds": 5.149454958,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.13397264583743151,
+          "mean_voltage_deviation_mV": -1.7127609250137479,
+          "min_voltage_mV": -60.38059237119256,
+          "net_exc_arrivals": 43.175,
+          "net_inh_arrivals": -741.1250000000005
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 2.4451465691991103,
+          "mean_voltage_deviation_mV": -2.5626831740214127,
+          "min_voltage_mV": -78.17790373580684,
+          "net_exc_arrivals": 202.95000000000005,
+          "net_inh_arrivals": -6557.65
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -23.473509984649663,
+          "min_voltage_mV": -143.84511453175006,
+          "net_exc_arrivals": 82.5,
+          "net_inh_arrivals": -89256.20000000003
+        },
+        "vAB3": {
+          "spikes": 74,
+          "mean_hz": 74.0,
+          "peak_depolarization_mV": 7.284444360040382,
+          "mean_voltage_deviation_mV": 1.9586931414806905,
+          "min_voltage_mV": -54.63781740074158,
+          "net_exc_arrivals": 7793.775000000004,
+          "net_inh_arrivals": -2214.574999999999
+        }
+      }
+    },
+    {
+      "key": "conservative__candidate_male__mAL_blocked__3",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "mAL_blocked",
+      "seed": 3,
+      "events": 1035,
+      "total_spikes": 2915,
+      "seconds": 4.635596124999999,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.13397264583743151,
+          "mean_voltage_deviation_mV": -1.7127609250137479,
+          "min_voltage_mV": -60.38059237119256,
+          "net_exc_arrivals": 43.175,
+          "net_inh_arrivals": -741.1250000000005
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 2.4451465691991103,
+          "mean_voltage_deviation_mV": -2.5626831740214127,
+          "min_voltage_mV": -78.17790373580684,
+          "net_exc_arrivals": 202.95000000000005,
+          "net_inh_arrivals": -6557.65
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -23.473509984649663,
+          "min_voltage_mV": -143.84511453175006,
+          "net_exc_arrivals": 82.5,
+          "net_inh_arrivals": -89256.20000000003
+        },
+        "vAB3": {
+          "spikes": 74,
+          "mean_hz": 74.0,
+          "peak_depolarization_mV": 7.284444360040382,
+          "mean_voltage_deviation_mV": 1.9586931414806905,
+          "min_voltage_mV": -54.63781740074158,
+          "net_exc_arrivals": 7793.775000000004,
+          "net_inh_arrivals": -2214.574999999999
+        }
+      }
+    },
+    {
+      "key": "conservative__candidate_female__intact__1",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 1,
+      "events": 1161,
+      "total_spikes": 1157,
+      "seconds": 4.7319034580000015,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "vAB3": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -43.17858179225253,
+          "min_voltage_mV": -175.93259989985663,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -8730.425000000001
+        }
+      }
+    },
+    {
+      "key": "conservative__candidate_female__mAL_blocked__1",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 1,
+      "events": 1161,
+      "total_spikes": 1157,
+      "seconds": 5.088193667000002,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "vAB3": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -43.17858179225253,
+          "min_voltage_mV": -175.93259989985663,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -8730.425000000001
+        }
+      }
+    },
+    {
+      "key": "conservative__candidate_female__intact__2",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 2,
+      "events": 1106,
+      "total_spikes": 1105,
+      "seconds": 5.055948790999999,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "vAB3": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -42.56593632485882,
+          "min_voltage_mV": -171.244721113137,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -8619.875000000004
+        }
+      }
+    },
+    {
+      "key": "conservative__candidate_female__mAL_blocked__2",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 2,
+      "events": 1106,
+      "total_spikes": 1105,
+      "seconds": 6.288113207999999,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "vAB3": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -42.56593632485882,
+          "min_voltage_mV": -171.244721113137,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -8619.875000000004
+        }
+      }
+    },
+    {
+      "key": "conservative__candidate_female__intact__3",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 3,
+      "events": 1116,
+      "total_spikes": 1116,
+      "seconds": 4.573697291000002,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "vAB3": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -42.5707796611357,
+          "min_voltage_mV": -177.00498642820895,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -8625.099999999993
+        }
+      }
+    },
+    {
+      "key": "conservative__candidate_female__mAL_blocked__3",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 3,
+      "events": 1116,
+      "total_spikes": 1116,
+      "seconds": 5.842728375,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "vAB3": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -42.5707796611357,
+          "min_voltage_mV": -177.00498642820895,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -8625.099999999993
+        }
+      }
+    },
+    {
+      "key": "conservative__vAB3__intact__1",
+      "setting": "conservative",
+      "input": "vAB3",
+      "condition": "intact",
+      "seed": 1,
+      "events": 124,
+      "total_spikes": 124,
+      "seconds": 6.190446209000001,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -0.18434121577315735,
+          "min_voltage_mV": -52.955951754286126,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -74.525
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -2.7860302988354984,
+          "min_voltage_mV": -94.67276758650816,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -6914.325000000001
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -11.830587390650015,
+          "min_voltage_mV": -123.82572068143449,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -44850.575000000004
+        },
+        "vAB3": {
+          "spikes": 124,
+          "mean_hz": 124.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -1.1636081865072052,
+          "min_voltage_mV": -65.98933046538994,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -1703.8999999999996
+        }
+      }
+    },
+    {
+      "key": "conservative__vAB3__mAL_blocked__1",
+      "setting": "conservative",
+      "input": "vAB3",
+      "condition": "mAL_blocked",
+      "seed": 1,
+      "events": 124,
+      "total_spikes": 124,
+      "seconds": 6.299580540999997,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -0.18434121577315735,
+          "min_voltage_mV": -52.955951754286126,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -74.525
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -2.7860302988354984,
+          "min_voltage_mV": -94.67276758650816,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -6914.325000000001
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -11.830587390650015,
+          "min_voltage_mV": -123.82572068143449,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -44850.575000000004
+        },
+        "vAB3": {
+          "spikes": 124,
+          "mean_hz": 124.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -1.1636081865072052,
+          "min_voltage_mV": -65.98933046538994,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -1703.8999999999996
+        }
+      }
+    },
+    {
+      "key": "conservative__vAB3__intact__2",
+      "setting": "conservative",
+      "input": "vAB3",
+      "condition": "intact",
+      "seed": 2,
+      "events": 125,
+      "total_spikes": 125,
+      "seconds": 6.134239667000003,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -0.15582822504255922,
+          "min_voltage_mV": -52.74541930114493,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -63.25000000000003
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -2.6810279742012666,
+          "min_voltage_mV": -89.30966282529903,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -6661.875
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -12.058465190747677,
+          "min_voltage_mV": -110.88786610657513,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -45787.5
+        },
+        "vAB3": {
+          "spikes": 125,
+          "mean_hz": 125.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -1.0176860919298716,
+          "min_voltage_mV": -60.524430221533756,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -1581.25
+        }
+      }
+    },
+    {
+      "key": "conservative__vAB3__mAL_blocked__2",
+      "setting": "conservative",
+      "input": "vAB3",
+      "condition": "mAL_blocked",
+      "seed": 2,
+      "events": 125,
+      "total_spikes": 125,
+      "seconds": 6.271454208999998,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -0.15582822504255922,
+          "min_voltage_mV": -52.74541930114493,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -63.25000000000003
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -2.6810279742012666,
+          "min_voltage_mV": -89.30966282529903,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -6661.875
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -12.058465190747677,
+          "min_voltage_mV": -110.88786610657513,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -45787.5
+        },
+        "vAB3": {
+          "spikes": 125,
+          "mean_hz": 125.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -1.0176860919298716,
+          "min_voltage_mV": -60.524430221533756,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -1581.25
+        }
+      }
+    },
+    {
+      "key": "conservative__vAB3__intact__3",
+      "setting": "conservative",
+      "input": "vAB3",
+      "condition": "intact",
+      "seed": 3,
+      "events": 93,
+      "total_spikes": 93,
+      "seconds": 7.715300374999998,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -0.10283647093780406,
+          "min_voltage_mV": -52.64761798554239,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -41.800000000000026
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -1.9721972611643528,
+          "min_voltage_mV": -87.84641086040835,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -4897.475
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -8.906075180385502,
+          "min_voltage_mV": -102.09796018787796,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -33915.200000000004
+        },
+        "vAB3": {
+          "spikes": 93,
+          "mean_hz": 93.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -1.2743350522246175,
+          "min_voltage_mV": -66.64951102934484,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -1137.9499999999996
+        }
+      }
+    },
+    {
+      "key": "conservative__vAB3__mAL_blocked__3",
+      "setting": "conservative",
+      "input": "vAB3",
+      "condition": "mAL_blocked",
+      "seed": 3,
+      "events": 93,
+      "total_spikes": 93,
+      "seconds": 7.960360167000005,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -0.10283647093780406,
+          "min_voltage_mV": -52.64761798554239,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -41.800000000000026
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -1.9721972611643528,
+          "min_voltage_mV": -87.84641086040835,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -4897.475
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -8.906075180385502,
+          "min_voltage_mV": -102.09796018787796,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -33915.200000000004
+        },
+        "vAB3": {
+          "spikes": 93,
+          "mean_hz": 93.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -1.2743350522246175,
+          "min_voltage_mV": -66.64951102934484,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -1137.9499999999996
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__candidate_male__intact__1",
+      "setting": "vAB3_excitatory",
+      "input": "candidate_male",
+      "condition": "intact",
+      "seed": 1,
+      "events": 1151,
+      "total_spikes": 61975,
+      "seconds": 6.918495167000003,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 3.8614580407169825,
+          "mean_voltage_deviation_mV": -4.311330009519402,
+          "min_voltage_mV": -68.50155799572732,
+          "net_exc_arrivals": 2429.624999999999,
+          "net_inh_arrivals": -4245.999999999995
+        },
+        "P1_related": {
+          "spikes": 48,
+          "mean_hz": 3.9183673469387754,
+          "peak_depolarization_mV": 7.161724634874126,
+          "mean_voltage_deviation_mV": -1.1271977681576593,
+          "min_voltage_mV": -74.3907907212628,
+          "net_exc_arrivals": 11749.649999999998,
+          "net_inh_arrivals": -12757.250000000002
+        },
+        "mAL": {
+          "spikes": 114,
+          "mean_hz": 6.08,
+          "peak_depolarization_mV": 7.1838408969444885,
+          "mean_voltage_deviation_mV": -10.680482128374198,
+          "min_voltage_mV": -111.09869905074598,
+          "net_exc_arrivals": 33439.724999999984,
+          "net_inh_arrivals": -68671.90000000004
+        },
+        "vAB3": {
+          "spikes": 79,
+          "mean_hz": 79.0,
+          "peak_depolarization_mV": 7.356440407219999,
+          "mean_voltage_deviation_mV": 1.2144389022903717,
+          "min_voltage_mV": -58.513556798579046,
+          "net_exc_arrivals": 8932.550000000016,
+          "net_inh_arrivals": -2814.9
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__candidate_male__mAL_blocked__1",
+      "setting": "vAB3_excitatory",
+      "input": "candidate_male",
+      "condition": "mAL_blocked",
+      "seed": 1,
+      "events": 1151,
+      "total_spikes": 62324,
+      "seconds": 7.871576540999996,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 7,
+          "mean_hz": 3.5,
+          "peak_depolarization_mV": 7.027364417924559,
+          "mean_voltage_deviation_mV": -0.9386409055121924,
+          "min_voltage_mV": -64.14530819412904,
+          "net_exc_arrivals": 3012.624999999999,
+          "net_inh_arrivals": -3191.649999999998
+        },
+        "P1_related": {
+          "spikes": 67,
+          "mean_hz": 5.469387755102041,
+          "peak_depolarization_mV": 7.130630218189815,
+          "mean_voltage_deviation_mV": 0.10047021489105719,
+          "min_voltage_mV": -63.061999363894486,
+          "net_exc_arrivals": 13499.75,
+          "net_inh_arrivals": -10437.625000000004
+        },
+        "mAL": {
+          "spikes": 148,
+          "mean_hz": 7.8933333333333335,
+          "peak_depolarization_mV": 7.1920377759311975,
+          "mean_voltage_deviation_mV": -10.633124680418703,
+          "min_voltage_mV": -112.88833431199201,
+          "net_exc_arrivals": 37526.77499999998,
+          "net_inh_arrivals": -70567.47500000002
+        },
+        "vAB3": {
+          "spikes": 85,
+          "mean_hz": 85.0,
+          "peak_depolarization_mV": 7.271355851995246,
+          "mean_voltage_deviation_mV": 1.369029389181042,
+          "min_voltage_mV": -56.53587835164947,
+          "net_exc_arrivals": 8910.825000000013,
+          "net_inh_arrivals": -2247.8499999999995
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__candidate_male__intact__2",
+      "setting": "vAB3_excitatory",
+      "input": "candidate_male",
+      "condition": "intact",
+      "seed": 2,
+      "events": 1133,
+      "total_spikes": 72860,
+      "seconds": 7.7623718339999925,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 2.6758002384493693,
+          "mean_voltage_deviation_mV": -4.273504475748534,
+          "min_voltage_mV": -68.64264179640519,
+          "net_exc_arrivals": 2206.325,
+          "net_inh_arrivals": -4058.7249999999967
+        },
+        "P1_related": {
+          "spikes": 48,
+          "mean_hz": 3.9183673469387754,
+          "peak_depolarization_mV": 7.097602015096676,
+          "mean_voltage_deviation_mV": -1.400836928252613,
+          "min_voltage_mV": -71.11661528613557,
+          "net_exc_arrivals": 12013.925000000001,
+          "net_inh_arrivals": -13717.275
+        },
+        "mAL": {
+          "spikes": 112,
+          "mean_hz": 5.973333333333334,
+          "peak_depolarization_mV": 7.2083845680636855,
+          "mean_voltage_deviation_mV": -10.130990504595877,
+          "min_voltage_mV": -107.06431106771755,
+          "net_exc_arrivals": 34225.94999999998,
+          "net_inh_arrivals": -67616.72500000002
+        },
+        "vAB3": {
+          "spikes": 77,
+          "mean_hz": 77.0,
+          "peak_depolarization_mV": 7.400121532393442,
+          "mean_voltage_deviation_mV": 1.3625570703888799,
+          "min_voltage_mV": -56.9981357056028,
+          "net_exc_arrivals": 8465.875000000011,
+          "net_inh_arrivals": -2719.1999999999985
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__candidate_male__mAL_blocked__2",
+      "setting": "vAB3_excitatory",
+      "input": "candidate_male",
+      "condition": "mAL_blocked",
+      "seed": 2,
+      "events": 1133,
+      "total_spikes": 29527,
+      "seconds": 7.6319375000000065,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 9,
+          "mean_hz": 4.5,
+          "peak_depolarization_mV": 7.056670705760176,
+          "mean_voltage_deviation_mV": -0.09779042991718444,
+          "min_voltage_mV": -59.88069829820421,
+          "net_exc_arrivals": 2723.0499999999997,
+          "net_inh_arrivals": -2480.2250000000004
+        },
+        "P1_related": {
+          "spikes": 53,
+          "mean_hz": 4.326530612244898,
+          "peak_depolarization_mV": 7.11090925037017,
+          "mean_voltage_deviation_mV": 0.362236317211936,
+          "min_voltage_mV": -59.96246252644762,
+          "net_exc_arrivals": 11021.175,
+          "net_inh_arrivals": -7994.525000000001
+        },
+        "mAL": {
+          "spikes": 162,
+          "mean_hz": 8.64,
+          "peak_depolarization_mV": 7.191513777041514,
+          "mean_voltage_deviation_mV": -9.177802867861569,
+          "min_voltage_mV": -106.66009514989851,
+          "net_exc_arrivals": 36340.14999999998,
+          "net_inh_arrivals": -63119.37500000002
+        },
+        "vAB3": {
+          "spikes": 85,
+          "mean_hz": 85.0,
+          "peak_depolarization_mV": 7.257134004830853,
+          "mean_voltage_deviation_mV": 1.368524234437048,
+          "min_voltage_mV": -58.832000912974046,
+          "net_exc_arrivals": 8639.950000000012,
+          "net_inh_arrivals": -2088.3499999999995
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__candidate_male__intact__3",
+      "setting": "vAB3_excitatory",
+      "input": "candidate_male",
+      "condition": "intact",
+      "seed": 3,
+      "events": 1035,
+      "total_spikes": 50146,
+      "seconds": 8.131748583999979,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 4.55157971372568,
+          "mean_voltage_deviation_mV": -4.067806534758901,
+          "min_voltage_mV": -69.83726115683812,
+          "net_exc_arrivals": 2148.0249999999996,
+          "net_inh_arrivals": -3892.074999999998
+        },
+        "P1_related": {
+          "spikes": 44,
+          "mean_hz": 3.5918367346938775,
+          "peak_depolarization_mV": 7.08968042544582,
+          "mean_voltage_deviation_mV": -1.0602419926794153,
+          "min_voltage_mV": -71.96595926331035,
+          "net_exc_arrivals": 10775.049999999997,
+          "net_inh_arrivals": -11796.400000000001
+        },
+        "mAL": {
+          "spikes": 116,
+          "mean_hz": 6.1866666666666665,
+          "peak_depolarization_mV": 7.143008318770278,
+          "mean_voltage_deviation_mV": -9.73319469763088,
+          "min_voltage_mV": -106.05801615997082,
+          "net_exc_arrivals": 32205.249999999985,
+          "net_inh_arrivals": -63707.05000000003
+        },
+        "vAB3": {
+          "spikes": 75,
+          "mean_hz": 75.0,
+          "peak_depolarization_mV": 7.304300790314741,
+          "mean_voltage_deviation_mV": 1.1243706893045182,
+          "min_voltage_mV": -57.91111791045839,
+          "net_exc_arrivals": 8377.050000000008,
+          "net_inh_arrivals": -2776.949999999999
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__candidate_male__mAL_blocked__3",
+      "setting": "vAB3_excitatory",
+      "input": "candidate_male",
+      "condition": "mAL_blocked",
+      "seed": 3,
+      "events": 1035,
+      "total_spikes": 79665,
+      "seconds": 6.863902542000005,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 2,
+          "mean_hz": 1.0,
+          "peak_depolarization_mV": 7.060125806578519,
+          "mean_voltage_deviation_mV": -0.34435841198832595,
+          "min_voltage_mV": -61.62296605231358,
+          "net_exc_arrivals": 2628.45,
+          "net_inh_arrivals": -2792.624999999998
+        },
+        "P1_related": {
+          "spikes": 56,
+          "mean_hz": 4.571428571428571,
+          "peak_depolarization_mV": 7.124631249329411,
+          "mean_voltage_deviation_mV": -0.215339399146803,
+          "min_voltage_mV": -62.59951378562275,
+          "net_exc_arrivals": 13045.724999999999,
+          "net_inh_arrivals": -11470.250000000002
+        },
+        "mAL": {
+          "spikes": 138,
+          "mean_hz": 7.36,
+          "peak_depolarization_mV": 7.168593456818975,
+          "mean_voltage_deviation_mV": -9.149804745108053,
+          "min_voltage_mV": -108.37928667296741,
+          "net_exc_arrivals": 36357.47499999998,
+          "net_inh_arrivals": -64464.40000000002
+        },
+        "vAB3": {
+          "spikes": 79,
+          "mean_hz": 79.0,
+          "peak_depolarization_mV": 7.266460353364117,
+          "mean_voltage_deviation_mV": 1.5366771536761954,
+          "min_voltage_mV": -57.95038012728268,
+          "net_exc_arrivals": 7978.025000000009,
+          "net_inh_arrivals": -2137.2999999999997
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__candidate_female__intact__1",
+      "setting": "vAB3_excitatory",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 1,
+      "events": 1161,
+      "total_spikes": 1157,
+      "seconds": 6.573432457999985,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "vAB3": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -43.17858179225253,
+          "min_voltage_mV": -175.93259989985663,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -8730.425000000001
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__candidate_female__mAL_blocked__1",
+      "setting": "vAB3_excitatory",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 1,
+      "events": 1161,
+      "total_spikes": 1157,
+      "seconds": 6.145001041,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "vAB3": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -43.17858179225253,
+          "min_voltage_mV": -175.93259989985663,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -8730.425000000001
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__candidate_female__intact__2",
+      "setting": "vAB3_excitatory",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 2,
+      "events": 1106,
+      "total_spikes": 1105,
+      "seconds": 6.058842749999997,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "vAB3": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -42.56593632485882,
+          "min_voltage_mV": -171.244721113137,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -8619.875000000004
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__candidate_female__mAL_blocked__2",
+      "setting": "vAB3_excitatory",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 2,
+      "events": 1106,
+      "total_spikes": 1105,
+      "seconds": 6.598389499999996,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "vAB3": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -42.56593632485882,
+          "min_voltage_mV": -171.244721113137,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -8619.875000000004
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__candidate_female__intact__3",
+      "setting": "vAB3_excitatory",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 3,
+      "events": 1116,
+      "total_spikes": 1116,
+      "seconds": 5.825618665999997,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "vAB3": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -42.5707796611357,
+          "min_voltage_mV": -177.00498642820895,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -8625.099999999993
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__candidate_female__mAL_blocked__3",
+      "setting": "vAB3_excitatory",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 3,
+      "events": 1116,
+      "total_spikes": 1116,
+      "seconds": 7.230578957999995,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "P1_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "mAL": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": 0.0,
+          "min_voltage_mV": -52.0,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": 0.0
+        },
+        "vAB3": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.0,
+          "mean_voltage_deviation_mV": -42.5707796611357,
+          "min_voltage_mV": -177.00498642820895,
+          "net_exc_arrivals": 0.0,
+          "net_inh_arrivals": -8625.099999999993
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__vAB3__intact__1",
+      "setting": "vAB3_excitatory",
+      "input": "vAB3",
+      "condition": "intact",
+      "seed": 1,
+      "events": 124,
+      "total_spikes": 10016,
+      "seconds": 7.06473920800002,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.11645778132817952,
+          "mean_voltage_deviation_mV": -7.868197153670738,
+          "min_voltage_mV": -72.54673148628864,
+          "net_exc_arrivals": 2180.199999999999,
+          "net_inh_arrivals": -5375.149999999995
+        },
+        "P1_related": {
+          "spikes": 22,
+          "mean_hz": 1.7959183673469388,
+          "peak_depolarization_mV": 7.152504269255431,
+          "mean_voltage_deviation_mV": -3.6662672659334454,
+          "min_voltage_mV": -85.53816764668295,
+          "net_exc_arrivals": 10094.974999999999,
+          "net_inh_arrivals": -18008.100000000002
+        },
+        "mAL": {
+          "spikes": 352,
+          "mean_hz": 18.773333333333333,
+          "peak_depolarization_mV": 7.364680758354368,
+          "mean_voltage_deviation_mV": -4.9053803152806275,
+          "min_voltage_mV": -100.12443919250697,
+          "net_exc_arrivals": 47123.725,
+          "net_inh_arrivals": -45461.89999999998
+        },
+        "vAB3": {
+          "spikes": 124,
+          "mean_hz": 124.0,
+          "peak_depolarization_mV": 6.750689193043527,
+          "mean_voltage_deviation_mV": -2.0970619034429085,
+          "min_voltage_mV": -67.56771818585695,
+          "net_exc_arrivals": 1825.724999999998,
+          "net_inh_arrivals": -3449.5999999999985
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__vAB3__mAL_blocked__1",
+      "setting": "vAB3_excitatory",
+      "input": "vAB3",
+      "condition": "mAL_blocked",
+      "seed": 1,
+      "events": 124,
+      "total_spikes": 53417,
+      "seconds": 7.241474124999996,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 20,
+          "mean_hz": 10.0,
+          "peak_depolarization_mV": 7.102491924539557,
+          "mean_voltage_deviation_mV": -0.26557916919598357,
+          "min_voltage_mV": -60.441208204718265,
+          "net_exc_arrivals": 4264.149999999999,
+          "net_inh_arrivals": -3491.124999999998
+        },
+        "P1_related": {
+          "spikes": 86,
+          "mean_hz": 7.020408163265306,
+          "peak_depolarization_mV": 7.176843317711835,
+          "mean_voltage_deviation_mV": -0.19017097196696245,
+          "min_voltage_mV": -61.77702671825657,
+          "net_exc_arrivals": 16558.575000000004,
+          "net_inh_arrivals": -12783.925000000007
+        },
+        "mAL": {
+          "spikes": 438,
+          "mean_hz": 23.36,
+          "peak_depolarization_mV": 7.488384545181496,
+          "mean_voltage_deviation_mV": -1.198216574412483,
+          "min_voltage_mV": -89.72760844751383,
+          "net_exc_arrivals": 54606.75,
+          "net_inh_arrivals": -34176.44999999997
+        },
+        "vAB3": {
+          "spikes": 128,
+          "mean_hz": 128.0,
+          "peak_depolarization_mV": 7.128814057539515,
+          "mean_voltage_deviation_mV": -0.42478011640265406,
+          "min_voltage_mV": -59.761282135017815,
+          "net_exc_arrivals": 2036.9249999999981,
+          "net_inh_arrivals": -1649.45
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__vAB3__intact__2",
+      "setting": "vAB3_excitatory",
+      "input": "vAB3",
+      "condition": "intact",
+      "seed": 2,
+      "events": 125,
+      "total_spikes": 14165,
+      "seconds": 7.877128209000006,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 0.8171291025220526,
+          "mean_voltage_deviation_mV": -7.7976035081334105,
+          "min_voltage_mV": -70.72761803532438,
+          "net_exc_arrivals": 2295.425,
+          "net_inh_arrivals": -5519.799999999996
+        },
+        "P1_related": {
+          "spikes": 23,
+          "mean_hz": 1.8775510204081634,
+          "peak_depolarization_mV": 7.323363917594193,
+          "mean_voltage_deviation_mV": -3.7181680534726094,
+          "min_voltage_mV": -85.23929759691322,
+          "net_exc_arrivals": 11113.3,
+          "net_inh_arrivals": -19162.550000000003
+        },
+        "mAL": {
+          "spikes": 369,
+          "mean_hz": 19.68,
+          "peak_depolarization_mV": 7.435186551126236,
+          "mean_voltage_deviation_mV": -5.062211542562377,
+          "min_voltage_mV": -101.00858627311084,
+          "net_exc_arrivals": 50070.075,
+          "net_inh_arrivals": -47810.39999999998
+        },
+        "vAB3": {
+          "spikes": 126,
+          "mean_hz": 126.0,
+          "peak_depolarization_mV": 7.024701273210518,
+          "mean_voltage_deviation_mV": -1.8741909106734913,
+          "min_voltage_mV": -67.7407033680166,
+          "net_exc_arrivals": 1718.1999999999994,
+          "net_inh_arrivals": -3644.574999999997
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__vAB3__mAL_blocked__2",
+      "setting": "vAB3_excitatory",
+      "input": "vAB3",
+      "condition": "mAL_blocked",
+      "seed": 2,
+      "events": 125,
+      "total_spikes": 5740,
+      "seconds": 6.688937583000012,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 21,
+          "mean_hz": 10.5,
+          "peak_depolarization_mV": 7.051963079827026,
+          "mean_voltage_deviation_mV": 0.14823879525785905,
+          "min_voltage_mV": -59.00716351202854,
+          "net_exc_arrivals": 3785.0999999999985,
+          "net_inh_arrivals": -2730.750000000001
+        },
+        "P1_related": {
+          "spikes": 82,
+          "mean_hz": 6.6938775510204085,
+          "peak_depolarization_mV": 7.2043675439268995,
+          "mean_voltage_deviation_mV": 0.2827872573262771,
+          "min_voltage_mV": -59.885062742139745,
+          "net_exc_arrivals": 13729.650000000001,
+          "net_inh_arrivals": -8400.975000000004
+        },
+        "mAL": {
+          "spikes": 462,
+          "mean_hz": 24.64,
+          "peak_depolarization_mV": 7.475897875156718,
+          "mean_voltage_deviation_mV": -1.2958784277732143,
+          "min_voltage_mV": -89.19324523250528,
+          "net_exc_arrivals": 53180.325,
+          "net_inh_arrivals": -30801.09999999999
+        },
+        "vAB3": {
+          "spikes": 128,
+          "mean_hz": 128.0,
+          "peak_depolarization_mV": 7.096542249071007,
+          "mean_voltage_deviation_mV": -0.06662309012490335,
+          "min_voltage_mV": -58.55003817902434,
+          "net_exc_arrivals": 1877.4249999999984,
+          "net_inh_arrivals": -1491.0499999999993
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__vAB3__intact__3",
+      "setting": "vAB3_excitatory",
+      "input": "vAB3",
+      "condition": "intact",
+      "seed": 3,
+      "events": 93,
+      "total_spikes": 33146,
+      "seconds": 7.452040000000011,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 0,
+          "mean_hz": 0.0,
+          "peak_depolarization_mV": 1.4289522379020667,
+          "mean_voltage_deviation_mV": -6.112700353229267,
+          "min_voltage_mV": -69.43760400131784,
+          "net_exc_arrivals": 1673.6499999999999,
+          "net_inh_arrivals": -4264.149999999998
+        },
+        "P1_related": {
+          "spikes": 19,
+          "mean_hz": 1.5510204081632653,
+          "peak_depolarization_mV": 7.206772260785307,
+          "mean_voltage_deviation_mV": -2.9357207219888366,
+          "min_voltage_mV": -78.16613275811098,
+          "net_exc_arrivals": 9314.8,
+          "net_inh_arrivals": -16147.724999999997
+        },
+        "mAL": {
+          "spikes": 264,
+          "mean_hz": 14.08,
+          "peak_depolarization_mV": 7.335511908884953,
+          "mean_voltage_deviation_mV": -3.3423861246350035,
+          "min_voltage_mV": -95.26973981427602,
+          "net_exc_arrivals": 39234.79999999998,
+          "net_inh_arrivals": -37614.77499999997
+        },
+        "vAB3": {
+          "spikes": 96,
+          "mean_hz": 96.0,
+          "peak_depolarization_mV": 7.1030687306462,
+          "mean_voltage_deviation_mV": -2.3472135114001573,
+          "min_voltage_mV": -64.90465441724812,
+          "net_exc_arrivals": 1312.2999999999988,
+          "net_inh_arrivals": -2929.299999999999
+        }
+      }
+    },
+    {
+      "key": "vAB3_excitatory__vAB3__mAL_blocked__3",
+      "setting": "vAB3_excitatory",
+      "input": "vAB3",
+      "condition": "mAL_blocked",
+      "seed": 3,
+      "events": 93,
+      "total_spikes": 5301,
+      "seconds": 7.224104125000025,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 18,
+          "mean_hz": 9.0,
+          "peak_depolarization_mV": 7.120336625773682,
+          "mean_voltage_deviation_mV": 0.4062349289700377,
+          "min_voltage_mV": -57.2899437404324,
+          "net_exc_arrivals": 2980.1749999999993,
+          "net_inh_arrivals": -1978.6250000000014
+        },
+        "P1_related": {
+          "spikes": 65,
+          "mean_hz": 5.3061224489795915,
+          "peak_depolarization_mV": 7.226578171587015,
+          "mean_voltage_deviation_mV": 0.2560452065972118,
+          "min_voltage_mV": -59.986273758695546,
+          "net_exc_arrivals": 10854.799999999997,
+          "net_inh_arrivals": -6622.825000000003
+        },
+        "mAL": {
+          "spikes": 332,
+          "mean_hz": 17.706666666666667,
+          "peak_depolarization_mV": 7.34771397572235,
+          "mean_voltage_deviation_mV": -0.7487881344318577,
+          "min_voltage_mV": -85.94424552974183,
+          "net_exc_arrivals": 40784.97499999998,
+          "net_inh_arrivals": -24782.175
+        },
+        "vAB3": {
+          "spikes": 96,
+          "mean_hz": 96.0,
+          "peak_depolarization_mV": 7.1300791577582245,
+          "mean_voltage_deviation_mV": -0.22236312698433341,
+          "min_voltage_mV": -58.53332981651319,
+          "net_exc_arrivals": 1397.5499999999988,
+          "net_inh_arrivals": -1307.3499999999995
+        }
+      }
+    },
+    {
+      "key": "vAB3_and_female_input_excitatory__candidate_female__intact__1",
+      "setting": "vAB3_and_female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 1,
+      "events": 1161,
+      "total_spikes": 7021,
+      "seconds": 7.545395500000012,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 15,
+          "mean_hz": 7.5,
+          "peak_depolarization_mV": 7.078367997430334,
+          "mean_voltage_deviation_mV": 0.6006725527783665,
+          "min_voltage_mV": -57.044303053782585,
+          "net_exc_arrivals": 3769.4249999999984,
+          "net_inh_arrivals": -2862.4750000000004
+        },
+        "P1_related": {
+          "spikes": 51,
+          "mean_hz": 4.163265306122449,
+          "peak_depolarization_mV": 7.113507838895693,
+          "mean_voltage_deviation_mV": 0.6278676129968827,
+          "min_voltage_mV": -68.01188899749145,
+          "net_exc_arrivals": 12999.799999999997,
+          "net_inh_arrivals": -8767.275000000001
+        },
+        "mAL": {
+          "spikes": 56,
+          "mean_hz": 2.986666666666667,
+          "peak_depolarization_mV": 7.126743604090187,
+          "mean_voltage_deviation_mV": -20.832517922283706,
+          "min_voltage_mV": -138.01283699139748,
+          "net_exc_arrivals": 26027.924999999992,
+          "net_inh_arrivals": -105653.90000000005
+        },
+        "vAB3": {
+          "spikes": 86,
+          "mean_hz": 86.0,
+          "peak_depolarization_mV": 7.584695359243675,
+          "mean_voltage_deviation_mV": -0.7491175362312131,
+          "min_voltage_mV": -63.36057793049188,
+          "net_exc_arrivals": 14925.900000000001,
+          "net_inh_arrivals": -5911.4
+        }
+      }
+    },
+    {
+      "key": "vAB3_and_female_input_excitatory__candidate_female__mAL_blocked__1",
+      "setting": "vAB3_and_female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 1,
+      "events": 1161,
+      "total_spikes": 88565,
+      "seconds": 7.68367008300001,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 30,
+          "mean_hz": 15.0,
+          "peak_depolarization_mV": 7.086671537799539,
+          "mean_voltage_deviation_mV": 0.5649793636352931,
+          "min_voltage_mV": -58.503387369436865,
+          "net_exc_arrivals": 4371.674999999999,
+          "net_inh_arrivals": -2810.2250000000004
+        },
+        "P1_related": {
+          "spikes": 68,
+          "mean_hz": 5.551020408163265,
+          "peak_depolarization_mV": 7.127284207353277,
+          "mean_voltage_deviation_mV": -0.15996073995612617,
+          "min_voltage_mV": -65.02770670135077,
+          "net_exc_arrivals": 18491.000000000007,
+          "net_inh_arrivals": -15665.375000000004
+        },
+        "mAL": {
+          "spikes": 69,
+          "mean_hz": 3.68,
+          "peak_depolarization_mV": 7.116845660885431,
+          "mean_voltage_deviation_mV": -20.469810858295457,
+          "min_voltage_mV": -144.23842309337815,
+          "net_exc_arrivals": 32225.324999999993,
+          "net_inh_arrivals": -108849.40000000013
+        },
+        "vAB3": {
+          "spikes": 83,
+          "mean_hz": 83.0,
+          "peak_depolarization_mV": 7.430160905930734,
+          "mean_voltage_deviation_mV": -1.265554796245183,
+          "min_voltage_mV": -66.24716121369227,
+          "net_exc_arrivals": 14566.474999999986,
+          "net_inh_arrivals": -5908.099999999998
+        }
+      }
+    },
+    {
+      "key": "vAB3_and_female_input_excitatory__candidate_female__intact__2",
+      "setting": "vAB3_and_female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 2,
+      "events": 1106,
+      "total_spikes": 6753,
+      "seconds": 7.315028582999986,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 18,
+          "mean_hz": 9.0,
+          "peak_depolarization_mV": 7.052352723062938,
+          "mean_voltage_deviation_mV": 0.4955181168351628,
+          "min_voltage_mV": -56.27711492574831,
+          "net_exc_arrivals": 3798.2999999999984,
+          "net_inh_arrivals": -2871.0000000000005
+        },
+        "P1_related": {
+          "spikes": 52,
+          "mean_hz": 4.244897959183674,
+          "peak_depolarization_mV": 7.156616043991583,
+          "mean_voltage_deviation_mV": 0.6377233954190855,
+          "min_voltage_mV": -65.53832869954675,
+          "net_exc_arrivals": 12769.349999999995,
+          "net_inh_arrivals": -8531.050000000001
+        },
+        "mAL": {
+          "spikes": 55,
+          "mean_hz": 2.933333333333333,
+          "peak_depolarization_mV": 7.138848113627702,
+          "mean_voltage_deviation_mV": -20.58471781455073,
+          "min_voltage_mV": -136.64517587729702,
+          "net_exc_arrivals": 26045.79999999999,
+          "net_inh_arrivals": -104302.82500000006
+        },
+        "vAB3": {
+          "spikes": 85,
+          "mean_hz": 85.0,
+          "peak_depolarization_mV": 7.516469908519639,
+          "mean_voltage_deviation_mV": -0.8623428171626571,
+          "min_voltage_mV": -63.3697550713245,
+          "net_exc_arrivals": 14404.224999999993,
+          "net_inh_arrivals": -5836.875
+        }
+      }
+    },
+    {
+      "key": "vAB3_and_female_input_excitatory__candidate_female__mAL_blocked__2",
+      "setting": "vAB3_and_female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 2,
+      "events": 1106,
+      "total_spikes": 7321,
+      "seconds": 6.673045833000003,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 24,
+          "mean_hz": 12.0,
+          "peak_depolarization_mV": 7.068661416014685,
+          "mean_voltage_deviation_mV": 1.2552347628163087,
+          "min_voltage_mV": -54.55028337509619,
+          "net_exc_arrivals": 3935.7999999999984,
+          "net_inh_arrivals": -2343.000000000001
+        },
+        "P1_related": {
+          "spikes": 66,
+          "mean_hz": 5.387755102040816,
+          "peak_depolarization_mV": 7.166952493804068,
+          "mean_voltage_deviation_mV": 0.5606024086641517,
+          "min_voltage_mV": -67.4552265340198,
+          "net_exc_arrivals": 14395.699999999999,
+          "net_inh_arrivals": -9431.400000000001
+        },
+        "mAL": {
+          "spikes": 57,
+          "mean_hz": 3.04,
+          "peak_depolarization_mV": 7.151008099983763,
+          "mean_voltage_deviation_mV": -20.42791664819631,
+          "min_voltage_mV": -134.80007438696722,
+          "net_exc_arrivals": 26829.824999999997,
+          "net_inh_arrivals": -104407.60000000006
+        },
+        "vAB3": {
+          "spikes": 85,
+          "mean_hz": 85.0,
+          "peak_depolarization_mV": 7.499983203075956,
+          "mean_voltage_deviation_mV": -0.6387168010431888,
+          "min_voltage_mV": -63.65225817397173,
+          "net_exc_arrivals": 14537.324999999992,
+          "net_inh_arrivals": -5611.650000000001
+        }
+      }
+    },
+    {
+      "key": "vAB3_and_female_input_excitatory__candidate_female__intact__3",
+      "setting": "vAB3_and_female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 3,
+      "events": 1116,
+      "total_spikes": 6715,
+      "seconds": 7.040147624999975,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 17,
+          "mean_hz": 8.5,
+          "peak_depolarization_mV": 7.053709576262911,
+          "mean_voltage_deviation_mV": 0.5600705245681966,
+          "min_voltage_mV": -57.14487852191566,
+          "net_exc_arrivals": 3722.124999999998,
+          "net_inh_arrivals": -2767.325000000001
+        },
+        "P1_related": {
+          "spikes": 51,
+          "mean_hz": 4.163265306122449,
+          "peak_depolarization_mV": 7.145720104812355,
+          "mean_voltage_deviation_mV": 0.7147064808954089,
+          "min_voltage_mV": -65.60404287309981,
+          "net_exc_arrivals": 12621.949999999997,
+          "net_inh_arrivals": -8074.550000000001
+        },
+        "mAL": {
+          "spikes": 57,
+          "mean_hz": 3.04,
+          "peak_depolarization_mV": 7.163722135751868,
+          "mean_voltage_deviation_mV": -19.649721578381346,
+          "min_voltage_mV": -132.5725067453745,
+          "net_exc_arrivals": 25770.249999999993,
+          "net_inh_arrivals": -100573.27500000002
+        },
+        "vAB3": {
+          "spikes": 83,
+          "mean_hz": 83.0,
+          "peak_depolarization_mV": 7.46993570016317,
+          "mean_voltage_deviation_mV": -0.9874189046413548,
+          "min_voltage_mV": -65.40851398942608,
+          "net_exc_arrivals": 13961.199999999988,
+          "net_inh_arrivals": -5710.374999999996
+        }
+      }
+    },
+    {
+      "key": "vAB3_and_female_input_excitatory__candidate_female__mAL_blocked__3",
+      "setting": "vAB3_and_female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 3,
+      "events": 1116,
+      "total_spikes": 85593,
+      "seconds": 6.7418811660000415,
+      "readouts": {
+        "R71G01_related": {
+          "spikes": 28,
+          "mean_hz": 14.0,
+          "peak_depolarization_mV": 7.098840515633938,
+          "mean_voltage_deviation_mV": 0.7355011888697942,
+          "min_voltage_mV": -58.99198722804967,
+          "net_exc_arrivals": 4550.699999999999,
+          "net_inh_arrivals": -2831.3999999999996
+        },
+        "P1_related": {
+          "spikes": 68,
+          "mean_hz": 5.551020408163265,
+          "peak_depolarization_mV": 7.242112967550497,
+          "mean_voltage_deviation_mV": -0.015214989035654951,
+          "min_voltage_mV": -63.528372103638134,
+          "net_exc_arrivals": 18468.175000000003,
+          "net_inh_arrivals": -14888.500000000005
+        },
+        "mAL": {
+          "spikes": 70,
+          "mean_hz": 3.7333333333333334,
+          "peak_depolarization_mV": 7.1334645410087845,
+          "mean_voltage_deviation_mV": -19.183036242361275,
+          "min_voltage_mV": -137.2619576843399,
+          "net_exc_arrivals": 32307.82499999999,
+          "net_inh_arrivals": -104514.0250000001
+        },
+        "vAB3": {
+          "spikes": 82,
+          "mean_hz": 82.0,
+          "peak_depolarization_mV": 7.449570011233327,
+          "mean_voltage_deviation_mV": -1.4238562888484736,
+          "min_voltage_mV": -66.9963190324977,
+          "net_exc_arrivals": 14118.774999999987,
+          "net_inh_arrivals": -5957.599999999996
+        }
+      }
+    }
+  ]
+}
