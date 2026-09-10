@@ -11,6 +11,10 @@ Open http://127.0.0.1:8000. The scene automatically loops every 10 seconds. Ther
 
 The default scene shows a male subject approaching a nearer male target while a female is also present. The right panel displays real MaleCNS anatomy and activity from the reduced circuit. **Model notes** contains controls and an evidence download.
 
+## Full-connectome pilot
+
+Open `/experiment.html` for synchronized playback of recorded full-network activity. The controlled pilot includes 166,606 classified MaleCNS neurons and 25.6 million connections. **It produced no mAL/P1-related response and does not demonstrate a preference switch.** See [experiment/RESULTS.md](experiment/RESULTS.md) and [reproduction instructions](experiment/README.md). The original fly scene below remains the earlier illustrative reduced model.
+
 ## What is real
 
 124 selected MaleCNS v1.0 neurons (75 GABA-consensus mAL; 49 Fru+/Dsx+ pC1/P1-related), 1,106 measured connections representing 8,076 synapses, and actual anatomical coordinates. Inhibition is reduced to 10% with all cue inputs and thresholds fixed between conditions.

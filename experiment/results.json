@@ -1,0 +1,2371 @@
+{
+  "metadata": {
+    "dataset": "male-cns:v1.0",
+    "neurons": 166606,
+    "edges": 25574615,
+    "synapses": 124144950,
+    "selection": "Nonempty superclass excluding tbc, following the authors counting notebook; all such v1.0 rows retained, including isolated nodes. Counts differ from v0.9 paper.",
+    "nt_counts": {
+      "acetylcholine": 103691,
+      "gaba": 22053,
+      "unclear": 2966,
+      "glutamate": 29298,
+      "octopamine": 101,
+      "serotonin": 48,
+      "dopamine": 392,
+      "histamine": 7891,
+      "unknown": 166
+    },
+    "zero_fast_weight_neurons": 11564,
+    "zero_fast_weight_edges": 1112336,
+    "groups": {
+      "candidate_male": [
+        148033,
+        148686,
+        149121,
+        149229,
+        149684,
+        149994,
+        150335,
+        150573,
+        152631,
+        153721,
+        153796,
+        155824,
+        156021,
+        156079,
+        156113,
+        156674,
+        157053,
+        157657,
+        158750,
+        159070,
+        159161,
+        159291,
+        160114,
+        160130,
+        160252,
+        160321,
+        160388,
+        160411,
+        160435,
+        162647,
+        166183,
+        166310,
+        166370,
+        166489,
+        166541,
+        166559,
+        166583
+      ],
+      "candidate_female": [
+        147240,
+        151324,
+        151336,
+        151761,
+        151876,
+        151910,
+        152358,
+        152746,
+        152993,
+        153532,
+        154030,
+        154394,
+        155084,
+        155267,
+        155622,
+        155870,
+        156449,
+        156932,
+        157305,
+        158635,
+        158664,
+        158988,
+        159150,
+        159438,
+        159986,
+        160008,
+        160258
+      ],
+      "mAL": [
+        373,
+        1418,
+        2138,
+        2878,
+        2900,
+        3013,
+        3209,
+        3486,
+        3772,
+        4013,
+        4343,
+        4652,
+        4718,
+        4800,
+        4836,
+        4903,
+        5093,
+        5488,
+        5836,
+        6007,
+        6178,
+        6304,
+        6509,
+        6635,
+        7041,
+        7735,
+        8328,
+        9389,
+        10201,
+        11805,
+        13551,
+        15199,
+        15395,
+        16434,
+        17818,
+        19907,
+        21695,
+        23232,
+        37407,
+        44228,
+        45672,
+        47069,
+        58651,
+        70461,
+        125811,
+        125812,
+        125813,
+        126307,
+        126308,
+        126418,
+        126577,
+        126578,
+        127688,
+        128042,
+        128241,
+        128817,
+        129136,
+        130420,
+        130421,
+        130422,
+        130424,
+        130425,
+        130446,
+        130537,
+        130539,
+        130540,
+        130541,
+        131373,
+        131515,
+        131570,
+        131980,
+        132176,
+        132181,
+        134110,
+        135182
+      ],
+      "P1_related": [
+        3057,
+        4807,
+        4919,
+        5745,
+        6756,
+        6915,
+        7324,
+        8127,
+        8184,
+        8287,
+        8334,
+        8782,
+        8801,
+        8831,
+        9000,
+        9047,
+        9320,
+        9438,
+        9763,
+        10966,
+        12490,
+        12638,
+        13228,
+        13749,
+        14233,
+        15203,
+        15340,
+        17262,
+        17379,
+        17556,
+        20016,
+        20154,
+        20682,
+        43080,
+        43707,
+        49570,
+        50389,
+        52321,
+        81931,
+        126753,
+        127500,
+        129135,
+        130089,
+        130428,
+        132216,
+        132470,
+        133394,
+        137033,
+        142656
+      ],
+      "PPN1": [
+        1335,
+        2137
+      ]
+    },
+    "group_annotations": {
+      "candidate_male": [
+        {
+          "bodyId": 804864,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 805659,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 806194,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 806323,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 806856,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 807234,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 807634,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 807918,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 810393,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 811772,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 811864,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 814407,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 814669,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 814750,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 814792,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 815589,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 816110,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 817057,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 819165,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 820081,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 820416,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 820949,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 832048,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 832650,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 843622,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 853982,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 869072,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 876858,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 890169,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 908944,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 1050291528,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 1051853325,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 1053771480,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 1064786432,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 1082561516,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 1101500902,
+          "type": "LgLG6",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 1155010907,
+          "type": "LgLG7",
+          "receptorType": "putative_ppk23",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        }
+      ],
+      "candidate_female": [
+        {
+          "bodyId": 803887,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 808812,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 808825,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 809352,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 809483,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 809521,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 810049,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 810534,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 810846,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 811535,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 812159,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 812601,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 813471,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 813704,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 814159,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 814479,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 815260,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 815942,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 816494,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 818867,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 818937,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 819781,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 820371,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 821708,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 828620,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 829120,
+          "type": "LgLG8",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        },
+        {
+          "bodyId": 844522,
+          "type": "LgLG5",
+          "receptorType": "putative_ppk25",
+          "synonyms": null,
+          "entryNerve": "ProLN",
+          "fruDsx": null
+        }
+      ],
+      "mAL": [
+        {
+          "bodyId": 10405,
+          "type": "mAL_m5a",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 11519,
+          "type": "mAL_m5b",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 12287,
+          "type": "mAL_m1",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 13075,
+          "type": "mAL_m1",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 13098,
+          "type": "mAL_m1",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 13222,
+          "type": "mAL_m5a",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 13430,
+          "type": "mAL_m5c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 13738,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 14050,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 14324,
+          "type": "mAL_m5c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 14695,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 15036,
+          "type": "mAL_m1",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 15108,
+          "type": "mAL_m1",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 15199,
+          "type": "mAL_m9",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 15239,
+          "type": "mAL_m1",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 15311,
+          "type": "mAL_m5b",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 15532,
+          "type": "mAL_m5b",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 15972,
+          "type": "mAL_m1",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 16362,
+          "type": "mAL_m5c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 16548,
+          "type": "mAL_m2b",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 16738,
+          "type": "mAL_m7",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 16882,
+          "type": "mAL_m4",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 17112,
+          "type": "mAL_m5a",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 17251,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 17701,
+          "type": "mAL_m2b",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 18479,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 19128,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 20335,
+          "type": "mAL_m3c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 21244,
+          "type": "mAL_m2b",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 23017,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 24980,
+          "type": "mAL_m2b",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 26828,
+          "type": "mAL_m10",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 27051,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 28210,
+          "type": "mAL_m3c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 29759,
+          "type": "mAL_m3c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 32156,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 34184,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 35918,
+          "type": "mAL_m3c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 52143,
+          "type": "mAL_m3c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 60170,
+          "type": "mAL_m4",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 61909,
+          "type": "mAL_m1",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 63601,
+          "type": "mAL_m3c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 77869,
+          "type": "mAL_m3c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 93140,
+          "type": "mAL_m3c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 511899,
+          "type": "mAL_m5a",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 511900,
+          "type": "mAL_m5c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 511901,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 512823,
+          "type": "mAL_m5a",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 512824,
+          "type": "mAL_m1",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 513042,
+          "type": "mAL_m1",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 513312,
+          "type": "mAL_m5b",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 513313,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 515276,
+          "type": "mAL_m5c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 515877,
+          "type": "mAL_m10",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 516221,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 517153,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 517736,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 519902,
+          "type": "mAL_m5a",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 519903,
+          "type": "mAL_m1",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 519904,
+          "type": "mAL_m5b",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 519906,
+          "type": "mAL_m4",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 519907,
+          "type": "mAL_m9",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 519939,
+          "type": "mAL_m8",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 520086,
+          "type": "mAL_m5b",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 520088,
+          "type": "mAL_m7",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 520089,
+          "type": "mAL_m9",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 520090,
+          "type": "mAL_m2b",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 521718,
+          "type": "mAL_m3c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 522407,
+          "type": "mAL_m11",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 522750,
+          "type": "mAL_m11",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 523834,
+          "type": "mAL_m5c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 524212,
+          "type": "mAL_m1",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 524226,
+          "type": "mAL_m9",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 529718,
+          "type": "mAL_m3c",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        },
+        {
+          "bodyId": 531864,
+          "type": "mAL_m2b",
+          "receptorType": null,
+          "synonyms": "Cachero 2010: aDT-b; Yu 2010: aDT2",
+          "entryNerve": null,
+          "fruDsx": "fru_high"
+        }
+      ],
+      "P1_related": [
+        {
+          "bodyId": 13266,
+          "type": "pC1_3b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 15208,
+          "type": "pC1_1a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 15329,
+          "type": "pC1_2a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 16262,
+          "type": "pC1_1b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 17387,
+          "type": "pC1_2a/2b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 17564,
+          "type": "pC1_2a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 18017,
+          "type": "pC1_3c",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 18913,
+          "type": "pC1_2b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 18974,
+          "type": "pC1_3a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 19085,
+          "type": "pC1_1a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 19136,
+          "type": "pC1_3c",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 19650,
+          "type": "pC1_3a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 19672,
+          "type": "pC1_13a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 19705,
+          "type": "pC1_2b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 19894,
+          "type": "pC1_3c",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 19948,
+          "type": "pC1_3c",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 20255,
+          "type": "pC1_1a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 20392,
+          "type": "pC1_2c",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 20751,
+          "type": "pC1_16a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 22093,
+          "type": "pC1_2c",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 23789,
+          "type": "pC1_16a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 23952,
+          "type": "pC1_16a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 24623,
+          "type": "pC1_6b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 25204,
+          "type": "pC1_13a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 25746,
+          "type": "pC1_16b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 26833,
+          "type": "pC1_16b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 26993,
+          "type": "pC1_1b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 29143,
+          "type": "pC1_5b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 29280,
+          "type": "pC1_1a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 29483,
+          "type": "pC1_5b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 32283,
+          "type": "pC1_16b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 32437,
+          "type": "pC1_15a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 33041,
+          "type": "pC1_16b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 58786,
+          "type": "pC1_16b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 59527,
+          "type": "pC1_16a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 66610,
+          "type": "pC1_16b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 67624,
+          "type": "pC1_16a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 70011,
+          "type": "pC1_5b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 108816,
+          "type": "pC1_15a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 513654,
+          "type": "pC1_16b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 514925,
+          "type": "pC1_3b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 517735,
+          "type": "pC1_6b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 519297,
+          "type": "pC1_2a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 519914,
+          "type": "pC1_1a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 524296,
+          "type": "pC1_1a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 524747,
+          "type": "pC1_2a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 526918,
+          "type": "pC1_1a",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 535835,
+          "type": "pC1_16b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        },
+        {
+          "bodyId": 557035,
+          "type": "pC1_5b",
+          "receptorType": null,
+          "synonyms": "Lee 2002, Rideout 2010, Nojima 2021: pC1; Cachero 2010: pMP-e; Yu 2010: pMP4",
+          "entryNerve": null,
+          "fruDsx": "coexpress_high"
+        }
+      ],
+      "PPN1": [
+        {
+          "bodyId": 11431,
+          "type": "AN05B102a",
+          "receptorType": null,
+          "synonyms": "Kallman 2015: PPN1",
+          "entryNerve": null,
+          "fruDsx": null
+        },
+        {
+          "bodyId": 12286,
+          "type": "AN05B102a",
+          "receptorType": null,
+          "synonyms": "Kallman 2015: PPN1",
+          "entryNerve": null,
+          "fruDsx": null
+        }
+      ]
+    },
+    "sha256": {
+      "annotations.feather": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "nt.feather": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+      "graph.feather": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1"
+    }
+  },
+  "code_sha256": "0723d4991741934be34adbf577b392d5e57d67abe441f94e5ece7bb7827af5bc",
+  "protocol_sha256": "4d75616347eb8505c40dc1e0c2c10ed2ac9b40aaa509865599e3f760a7c98513",
+  "results": [
+    {
+      "key": "conservative__candidate_male__intact__1",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "intact",
+      "seed": 1,
+      "input_events": 1151,
+      "rates_hz": {
+        "candidate_male": 136.86486486486487,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 3162,
+      "active_neurons": 503,
+      "seconds": 1.276
+    },
+    {
+      "key": "conservative__candidate_male__mAL_blocked__1",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "mAL_blocked",
+      "seed": 1,
+      "input_events": 1151,
+      "rates_hz": {
+        "candidate_male": 136.86486486486487,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 3162,
+      "active_neurons": 503,
+      "seconds": 0.728
+    },
+    {
+      "key": "conservative__candidate_male__intact__2",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "intact",
+      "seed": 2,
+      "input_events": 1133,
+      "rates_hz": {
+        "candidate_male": 133.0810810810811,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2811,
+      "active_neurons": 457,
+      "seconds": 0.717
+    },
+    {
+      "key": "conservative__candidate_male__mAL_blocked__2",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "mAL_blocked",
+      "seed": 2,
+      "input_events": 1133,
+      "rates_hz": {
+        "candidate_male": 133.0810810810811,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2811,
+      "active_neurons": 457,
+      "seconds": 0.735
+    },
+    {
+      "key": "conservative__candidate_male__intact__3",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "intact",
+      "seed": 3,
+      "input_events": 1035,
+      "rates_hz": {
+        "candidate_male": 124.0,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2915,
+      "active_neurons": 493,
+      "seconds": 0.763
+    },
+    {
+      "key": "conservative__candidate_male__mAL_blocked__3",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "mAL_blocked",
+      "seed": 3,
+      "input_events": 1035,
+      "rates_hz": {
+        "candidate_male": 124.0,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2915,
+      "active_neurons": 493,
+      "seconds": 0.749
+    },
+    {
+      "key": "conservative__candidate_male__restored__1",
+      "setting": "conservative",
+      "input": "candidate_male",
+      "condition": "restored",
+      "seed": 1,
+      "input_events": 1151,
+      "rates_hz": {
+        "candidate_male": 136.86486486486487,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 3162,
+      "active_neurons": 503,
+      "seconds": 0.746
+    },
+    {
+      "key": "conservative__candidate_female__intact__1",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 1,
+      "input_events": 1161,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 171.40740740740742,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 1157,
+      "active_neurons": 27,
+      "seconds": 0.751
+    },
+    {
+      "key": "conservative__candidate_female__mAL_blocked__1",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 1,
+      "input_events": 1161,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 171.40740740740742,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 1157,
+      "active_neurons": 27,
+      "seconds": 0.74
+    },
+    {
+      "key": "conservative__candidate_female__intact__2",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 2,
+      "input_events": 1106,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 163.7037037037037,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 1105,
+      "active_neurons": 27,
+      "seconds": 0.723
+    },
+    {
+      "key": "conservative__candidate_female__mAL_blocked__2",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 2,
+      "input_events": 1106,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 163.7037037037037,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 1105,
+      "active_neurons": 27,
+      "seconds": 0.746
+    },
+    {
+      "key": "conservative__candidate_female__intact__3",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 3,
+      "input_events": 1116,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 165.33333333333334,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 1116,
+      "active_neurons": 27,
+      "seconds": 0.79
+    },
+    {
+      "key": "conservative__candidate_female__mAL_blocked__3",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 3,
+      "input_events": 1116,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 165.33333333333334,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 1116,
+      "active_neurons": 27,
+      "seconds": 0.752
+    },
+    {
+      "key": "conservative__candidate_female__restored__1",
+      "setting": "conservative",
+      "input": "candidate_female",
+      "condition": "restored",
+      "seed": 1,
+      "input_events": 1161,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 171.40740740740742,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 1157,
+      "active_neurons": 27,
+      "seconds": 0.761
+    },
+    {
+      "key": "female_input_excitatory__candidate_male__intact__1",
+      "setting": "female_input_excitatory",
+      "input": "candidate_male",
+      "condition": "intact",
+      "seed": 1,
+      "input_events": 1151,
+      "rates_hz": {
+        "candidate_male": 136.86486486486487,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 3162,
+      "active_neurons": 503,
+      "seconds": 0.723
+    },
+    {
+      "key": "female_input_excitatory__candidate_male__mAL_blocked__1",
+      "setting": "female_input_excitatory",
+      "input": "candidate_male",
+      "condition": "mAL_blocked",
+      "seed": 1,
+      "input_events": 1151,
+      "rates_hz": {
+        "candidate_male": 136.86486486486487,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 3162,
+      "active_neurons": 503,
+      "seconds": 0.779
+    },
+    {
+      "key": "female_input_excitatory__candidate_male__intact__2",
+      "setting": "female_input_excitatory",
+      "input": "candidate_male",
+      "condition": "intact",
+      "seed": 2,
+      "input_events": 1133,
+      "rates_hz": {
+        "candidate_male": 133.0810810810811,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2811,
+      "active_neurons": 457,
+      "seconds": 0.752
+    },
+    {
+      "key": "female_input_excitatory__candidate_male__mAL_blocked__2",
+      "setting": "female_input_excitatory",
+      "input": "candidate_male",
+      "condition": "mAL_blocked",
+      "seed": 2,
+      "input_events": 1133,
+      "rates_hz": {
+        "candidate_male": 133.0810810810811,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2811,
+      "active_neurons": 457,
+      "seconds": 0.732
+    },
+    {
+      "key": "female_input_excitatory__candidate_male__intact__3",
+      "setting": "female_input_excitatory",
+      "input": "candidate_male",
+      "condition": "intact",
+      "seed": 3,
+      "input_events": 1035,
+      "rates_hz": {
+        "candidate_male": 124.0,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2915,
+      "active_neurons": 493,
+      "seconds": 0.722
+    },
+    {
+      "key": "female_input_excitatory__candidate_male__mAL_blocked__3",
+      "setting": "female_input_excitatory",
+      "input": "candidate_male",
+      "condition": "mAL_blocked",
+      "seed": 3,
+      "input_events": 1035,
+      "rates_hz": {
+        "candidate_male": 124.0,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2915,
+      "active_neurons": 493,
+      "seconds": 0.719
+    },
+    {
+      "key": "female_input_excitatory__candidate_male__restored__1",
+      "setting": "female_input_excitatory",
+      "input": "candidate_male",
+      "condition": "restored",
+      "seed": 1,
+      "input_events": 1151,
+      "rates_hz": {
+        "candidate_male": 136.86486486486487,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 3162,
+      "active_neurons": 503,
+      "seconds": 0.719
+    },
+    {
+      "key": "female_input_excitatory__candidate_female__intact__1",
+      "setting": "female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 1,
+      "input_events": 1161,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 247.40740740740742,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2271,
+      "active_neurons": 126,
+      "seconds": 0.732
+    },
+    {
+      "key": "female_input_excitatory__candidate_female__mAL_blocked__1",
+      "setting": "female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 1,
+      "input_events": 1161,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 247.40740740740742,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2271,
+      "active_neurons": 126,
+      "seconds": 0.725
+    },
+    {
+      "key": "female_input_excitatory__candidate_female__intact__2",
+      "setting": "female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 2,
+      "input_events": 1106,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 240.74074074074073,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2230,
+      "active_neurons": 133,
+      "seconds": 0.719
+    },
+    {
+      "key": "female_input_excitatory__candidate_female__mAL_blocked__2",
+      "setting": "female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 2,
+      "input_events": 1106,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 240.74074074074073,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2230,
+      "active_neurons": 133,
+      "seconds": 0.735
+    },
+    {
+      "key": "female_input_excitatory__candidate_female__intact__3",
+      "setting": "female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "intact",
+      "seed": 3,
+      "input_events": 1116,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 234.8148148148148,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2163,
+      "active_neurons": 129,
+      "seconds": 0.747
+    },
+    {
+      "key": "female_input_excitatory__candidate_female__mAL_blocked__3",
+      "setting": "female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "mAL_blocked",
+      "seed": 3,
+      "input_events": 1116,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 234.8148148148148,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2163,
+      "active_neurons": 129,
+      "seconds": 0.77
+    },
+    {
+      "key": "female_input_excitatory__candidate_female__restored__1",
+      "setting": "female_input_excitatory",
+      "input": "candidate_female",
+      "condition": "restored",
+      "seed": 1,
+      "input_events": 1161,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 247.40740740740742,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 2271,
+      "active_neurons": 126,
+      "seconds": 0.756
+    },
+    {
+      "key": "conservative__none__intact__1",
+      "setting": "conservative",
+      "input": "none",
+      "condition": "intact",
+      "seed": 1,
+      "input_events": 0,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 0.0
+      },
+      "spikes": 0,
+      "active_neurons": 0,
+      "seconds": 0.699
+    },
+    {
+      "key": "conservative__PPN1__intact__1",
+      "setting": "conservative",
+      "input": "PPN1",
+      "condition": "intact",
+      "seed": 1,
+      "input_events": 67,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 134.0
+      },
+      "spikes": 10733,
+      "active_neurons": 3461,
+      "seconds": 0.73
+    },
+    {
+      "key": "conservative__PPN1__mAL_blocked__1",
+      "setting": "conservative",
+      "input": "PPN1",
+      "condition": "mAL_blocked",
+      "seed": 1,
+      "input_events": 67,
+      "rates_hz": {
+        "candidate_male": 0.0,
+        "candidate_female": 0.0,
+        "mAL": 0.0,
+        "P1_related": 0.0,
+        "PPN1": 134.0
+      },
+      "spikes": 10733,
+      "active_neurons": 3461,
+      "seconds": 0.73
+    }
+  ],
+  "comparisons": [
+    {
+      "setting": "conservative",
+      "input": "candidate_male",
+      "paired_delta_hz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_delta_hz": 0.0
+    },
+    {
+      "setting": "conservative",
+      "input": "candidate_female",
+      "paired_delta_hz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_delta_hz": 0.0
+    },
+    {
+      "setting": "female_input_excitatory",
+      "input": "candidate_male",
+      "paired_delta_hz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_delta_hz": 0.0
+    },
+    {
+      "setting": "female_input_excitatory",
+      "input": "candidate_female",
+      "paired_delta_hz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_delta_hz": 0.0
+    }
+  ],
+  "wall_seconds": 23.468345499999998,
+  "checks": {
+    "identical_paired_input_counts": true,
+    "restoration_exact": true,
+    "no_input_zero": true
+  }
+}

@@ -10,6 +10,17 @@ from scipy.sparse import csr_matrix, save_npz
 
 p = argparse.ArgumentParser(); p.add_argument('data', type=Path); args = p.parse_args()
 root = args.data
+root.mkdir(parents=True, exist_ok=True)
+# Large source files stay outside the repository; fetch only when absent.
+from urllib.request import urlretrieve
+provenance=json.loads((Path(__file__).parent.parent/'assets/circuit.json').read_text())['provenance']
+for name,url in zip(['annotations.feather','nt.feather','graph.feather'],provenance['sources']):
+    path=root/name
+    if not path.exists():
+        temporary=path.with_suffix('.download')
+        print('Downloading',url,flush=True);urlretrieve(url,temporary);temporary.replace(path)
+    digest=hashlib.sha256(path.read_bytes()).hexdigest()
+    if digest!=provenance['sha256'][name]:raise ValueError('Source checksum mismatch: '+name)
 rows = feather.read_table(root/'annotations.feather').to_pylist()
 rows = sorted((r for r in rows if r['superclass'] and 'tbc' not in r['superclass']), key=lambda r:r['bodyId'])
 ids = np.array([r['bodyId'] for r in rows], dtype=np.int64)

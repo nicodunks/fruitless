@@ -18,8 +18,9 @@ def simulate(indptr, targets, weights, signs, inputs, input_hz, blocked, seed, d
     for step in range(steps):
         t=step*dt; slot=step%(delay+1)
         for i in range(n):
-            g[i]+=pending[slot,i];pending[slot,i]=0
+            incoming=pending[slot,i];pending[slot,i]=0
             if step>=release[i]:
+                g[i]+=incoming
                 v[i]=-52+(v[i]+52)*em+g[i]*coupling
                 g[i]*=eg
         if 50<=t<250:
@@ -76,7 +77,7 @@ def main():
                 assert a['input_events']==b['input_events']
                 diffs.append(b['rates_hz']['P1_related']-a['rates_hz']['P1_related'])
             comparisons.append({'setting':setting,'input':pop,'paired_delta_hz':diffs,'mean_delta_hz':float(np.mean(diffs))})
-    report={'metadata':meta,'protocol_sha256':hashlib.sha256((out/'PROTOCOL.md').read_bytes()).hexdigest(),'results':results,'comparisons':comparisons,'wall_seconds':time.perf_counter()-started,'checks':{'identical_paired_input_counts':True,'restoration_exact':True,'no_input_zero':True}}
+    report={'metadata':meta,'code_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'protocol_sha256':hashlib.sha256((out/'PROTOCOL.md').read_bytes()).hexdigest(),'results':results,'comparisons':comparisons,'wall_seconds':time.perf_counter()-started,'checks':{'identical_paired_input_counts':True,'restoration_exact':True,'no_input_zero':True}}
     (out/'results.json').write_text(json.dumps(report,indent=2));print('COMPLETE',report['wall_seconds'],flush=True)
 
 if __name__=='__main__':main()
