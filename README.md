@@ -48,3 +48,7 @@ The [initial pilot](experiment/README.md) and [original reduced model](MODEL.md)
 ## Credits
 
 [MaleCNS](https://male-cns.janelia.org/download/) data: CC-BY. [NeuroMechFly / NeLy-EPFL](https://github.com/NeLy-EPFL/fly-svg-maker) meshes: Apache-2.0, notices in `assets/fly/`. [Three.js](https://threejs.org/): MIT. Inspired by [Kallman, Kim & Scott (2015)](https://elifesciences.org/articles/11188).
+
+## License
+
+Original code and documentation: [ISC](LICENSE). Data and anatomical assets retain their upstream licenses; see [third-party credits](THIRD_PARTY.md).
