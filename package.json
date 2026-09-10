@@ -4,7 +4,7 @@
   "description": "A minimal local Three.js courtship circuit visualization",
   "scripts": {
     "start": "python3 -m http.server 8000 --bind 127.0.0.1",
-    "check": "node --check main.js && node --check fly.js && node --check circuit.js"
+    "check": "node --check main.js && node --check fly.js && node --check connectome.js && node --check circuit.js"
   },
   "license": "ISC",
   "dependencies": {

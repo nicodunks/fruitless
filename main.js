@@ -39,16 +39,16 @@ const hudTexture = new THREE.CanvasTexture(hudCanvas); hudTexture.colorSpace=THR
 const hudScene=new THREE.Scene(), hudCamera=new THREE.OrthographicCamera(-1,1,1,-1,0,2);
 hudCamera.position.z=1;
 hudScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2,2),new THREE.MeshBasicMaterial({map:hudTexture,transparent:true,depthTest:false,depthWrite:false,toneMapped:false})));
-let w=innerWidth,h=innerHeight,split=.77,viewW=1,clock=0,last=0,mode='perturbed';
+let w=innerWidth,h=innerHeight,split=.70,brainH=1,viewW=1,clock=0,last=0,mode='perturbed';
 let flies=[],data,connectome,trace=[],chosen=null,state=null;
 const start=new THREE.Vector3(-5.8,0,-.3);
 const targets=[{sex:'male',position:new THREE.Vector3(1.4,0,-2),color:'#77b6ff'}, {sex:'female',position:new THREE.Vector3(3.3,0,3.5),color:'#f598c1'}];
 const smooth=x=>{x=THREE.MathUtils.clamp(x,0,1);return x*x*(3-2*x)};
 function resize(width=innerWidth,height=innerHeight){
- w=width;h=height;split=w<700?.70:.77;viewW=Math.round(w*split);
+ w=width;h=height;split=w<700?.66:.70;viewW=Math.round(w*split);brainH=Math.round(h*.64);
  renderer.setSize(w,h,false);hudTexture.dispose();hudCanvas.width=w;hudCanvas.height=h;
  camera.aspect=viewW/h;camera.zoom=Math.min(1,camera.aspect/.75);camera.updateProjectionMatrix();
- brainCamera.aspect=(w-viewW)/h;brainCamera.updateProjectionMatrix();
+ brainCamera.aspect=(w-viewW)/brainH;brainCamera.updateProjectionMatrix();
  brainCamera.position.z=Math.max(5.6,2.15/(2*Math.tan(35*Math.PI/360)*brainCamera.aspect))*1.1;
  start.x=w<900?-3.1:-5.8;targets[1].position.x=w<900?1.8:3.3;
  targets.forEach((t,i)=>flies[i+1]?.position.copy(t.position));reset();
@@ -83,8 +83,8 @@ function update(dt){
   const heading=Math.atan2(-(goal.z-start.z),goal.x-start.x);
   subject.rotation.y=THREE.MathUtils.lerp(heading,partner.rotation.y,smooth((travel-.55)/.45));
  }else{subject.position.copy(start);subject.rotation.set(0,0,0);}
- // A restrained thirteen-degree orbit and sixteen-percent dolly, all inside the loop.
- const push=smooth(clock/duration),angle=Math.atan2(9,18)-.23*push,radius=Math.hypot(9,18)*(1-.16*push);
+ // A thirty-six-degree orbit with a quicker start and a smooth finish.
+ const progress=clock/duration,push=smooth(progress),orbit=1-Math.pow(1-progress,2),angle=Math.atan2(9,18)-.63*orbit,radius=Math.hypot(9,18)*(1-.16*push);
  camera.position.set(Math.sin(angle)*radius,10.5-1.2*push,Math.cos(angle)*radius);
  camera.lookAt(-.2+.55*push,.6+.15*push,-.15*push);
  animateFly(subject,clock,airborne,wing);
@@ -112,24 +112,24 @@ function drawHud(){
  text(mode==='perturbed'?'mAL OUTPUT BLOCKED':'mAL OUTPUT INTACT',viewW+pad*.65,62,w<700?9:11,mode==='perturbed'?'#bd9bff':'#e7af7c','left','monospace');
  if(flies.length){
   label(flies[1],'Male',targets[0].color,-7);label(flies[2],'Female',targets[1].color,0);
-  if(clock<3.2)label(flies[0],'Male · subject',targets[0].color,-5);
+  label(flies[0],'Male · subject',targets[0].color,-5);
  }
  const status=!chosen?'Observing':clock<6.8?'Approaching male':'Courtship';
  const actual=chosen?.sex==='female'?status.replace('male','female'):status;
  canvas.setAttribute('aria-label',`${actual}. ${mode} condition. Target: ${chosen?.sex||'none'}. Male response ${state?.male.spikes||'0'}, female response ${state?.female.spikes||'0'}.`);
 
  const rx=viewW+pad*.65,rwidth=w-viewW-pad*1.3;
- ctx.fillStyle='#caff75';ctx.fillRect(rx,h-134,5,5);text('P1 spikes',rx+13,h-128,small,'#caff75');
- ctx.fillStyle='#d9ffc1';ctx.fillRect(rx,h-108,5,5);text('Recorded spikes',rx+13,h-102,small,'#b4c7b2');
- ctx.fillStyle=mode==='perturbed'?'#bd9bff':'#e7af7c';ctx.fillRect(rx,h-82,5,5);text(mode==='perturbed'?'mAL · output blocked':'mAL · intact',rx+13,h-76,small,mode==='perturbed'?'#bd9bff':'#e7af7c');
- text('166,606 neurons',rx,h-49,w<700?9:11,'#6f8e88');
+ ctx.fillStyle='#caff75';ctx.fillRect(rx,brainH-134,5,5);text('P1 spikes',rx+13,brainH-128,small,'#caff75');
+ ctx.fillStyle='#d9ffc1';ctx.fillRect(rx,brainH-108,5,5);text('Recorded spikes',rx+13,brainH-102,small,'#b4c7b2');
+ ctx.fillStyle=mode==='perturbed'?'#bd9bff':'#e7af7c';ctx.fillRect(rx,brainH-82,5,5);text(mode==='perturbed'?'mAL · output blocked':'mAL · intact',rx+13,brainH-76,small,mode==='perturbed'?'#bd9bff':'#e7af7c');
+ text('166,606 neurons',rx,brainH-49,w<700?9:11,'#6f8e88');
 
  hudTexture.needsUpdate=true;
 }
 function render(){
  renderer.setScissorTest(false);renderer.setViewport(0,0,w,h);renderer.clear();
  renderer.setScissorTest(true);renderer.setViewport(0,0,viewW,h);renderer.setScissor(0,0,viewW,h);renderer.clear();renderer.render(scene,camera);
- renderer.setViewport(viewW,0,w-viewW,h);renderer.setScissor(viewW,0,w-viewW,h);renderer.clear();renderer.render(brainScene,brainCamera);
+ renderer.setViewport(viewW,h-brainH,w-viewW,brainH);renderer.setScissor(viewW,h-brainH,w-viewW,brainH);renderer.clear();renderer.render(brainScene,brainCamera);
  renderer.setScissorTest(false);renderer.setViewport(0,0,w,h);renderer.clearDepth();renderer.render(hudScene,hudCamera);
 }
 function frame(now){
@@ -138,17 +138,11 @@ function frame(now){
  drawHud();render();
  requestAnimationFrame(frame);
 }
-function saveBlob(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
-$('details').onclick=()=>{$('notes').showModal()};$('close').onclick=()=>$('notes').close();
-document.querySelectorAll('[data-mode]').forEach(button=>button.onclick=()=>{mode=button.dataset.mode;reset();$('notes').close();});
-$('download').onclick=()=>saveBlob(new Blob([JSON.stringify({mode,recording:data,trajectory:trace},null,2)],{type:'application/json'}),'fruitless-evidence.json');
 try{
  let raw;
  [flies,data,raw]=await Promise.all([Promise.all([createFly('./assets/fly'),createFly('./assets/fly'),createFly('./assets/fly')]),fetch('./assets/playback.json').then(r=>{if(!r.ok)throw Error('Recording unavailable');return r.json()}),fetch('./experiment/positions.f32').then(r=>{if(!r.ok)throw Error('Anatomy unavailable');return r.arrayBuffer()})]);
  flies.forEach((fly,i)=>{fly.scale.setScalar(i===2?.59:.55);scene.add(fly);if(i)fly.position.copy(targets[i-1].position)});
  connectome=createConnectome(brain,new Float32Array(raw),data);reset();update(1/60);
- $('model-notes').innerHTML=`<p>The right panel replays the full-network bounded experiment: candidate male input, seed 11, inhibitory reversal −70 mV. Its 300 ms recording is slowed to a 10-second loop. Anatomy shows 139,659 available soma positions; all 166,606 classified neurons were included in the experiment.</p><p>Mint flashes represent recorded 10 ms spike bins. Bright lime bursts mark recorded spikes in the eight-cell P1-related readout. Violet crossed rings identify recorded spikes in mAL cells whose outgoing transmission is blocked: these cells can still spike, but their output has no effect in the model. The rings and afterglow are display symbols, not measured propagation.</p><p>Both transmitter overrides and cell identities remain assumptions. Blocking mAL enabled a small male-candidate response; female-candidate responses remained stronger. <a href="experiment/followup/RESULTS.md">Full findings and limitations</a>.</p>`;
- $('assay').textContent='P1-related spike totals (250 ms)\n                  Male    Female\nIntact              0        11\nOutput blocked      4        18';
  $('loading').remove();
  requestAnimationFrame(frame);
 }catch(error){$('loading').textContent=`Demo couldn't load: ${error.message}`;console.error(error);}

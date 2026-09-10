@@ -1,45 +1,50 @@
 # Fruitless
 
-A small, local Three.js courtship-circuit demo. No build step, hosting, API key, or backend.
+A local Three.js fly animation with recorded activity from a 166,606-neuron MaleCNS model.
 
 ```sh
 npm install
 npm start
 ```
 
-Open http://127.0.0.1:8000. The scene automatically loops every 10 seconds. There is no timer or playback toolbar.
+Open [localhost:8000](http://127.0.0.1:8000/). Requires Node.js and Python 3.
 
-The default scene shows a male subject approaching a nearer male target while a female is also present. The right panel replays recorded full-network activity (candidate male input, seed 11, −70 mV inhibitory reversal). Lime bursts mark P1-related spikes; violet crossed rings mark spikes in mAL cells whose output is blocked. **Model notes** contains controls and an evidence download.
+## What we did
 
-## Follow-up experiments
+We asked a small question: **does blocking mAL output let male-associated sensory input activate a courtship-related group of neurons?** Earlier biological work identifies mAL as an inhibitory pathway—a brake on courtship circuitry.
 
-The [follow-up report](experiment/followup/RESULTS.md) documents a repeatable, conditional increase in male-candidate sensory response after mAL output block, including fresh seeds and bounded-inhibition checks. This is a neural-response result, not demonstrated mate preference. The viewer remains the original pilot; no frontend changes were made for the follow-up.
+We used the measured MaleCNS wiring graph: 166,606 classified neurons and approximately 25.6 million connections. Simple spiking-neuron rules turn that anatomy into a simulation. Neurotransmitter labels and functional research guide which outputs excite or inhibit other cells; these effects remain modeling assumptions, not measured properties of every connection.
 
-## Full-connectome pilot
+The experiment compares the same network receiving identical sensory inputs with **one intervention: blocking mAL output**. Inputs, connection rules, and firing thresholds stay fixed within each pair. We measure spikes in eight literature-mapped P1-related candidate neurons, without directly stimulating them. This makes the paired difference attributable to mAL output block within the model.
 
-Open `/experiment.html` for synchronized playback of recorded full-network activity. The controlled pilot includes 166,606 classified MaleCNS neurons and 25.6 million connections. **It produced no mAL/P1-related response and does not demonstrate a preference switch.** See [experiment/RESULTS.md](experiment/RESULTS.md) and [reproduction instructions](experiment/README.md). The original fly scene below remains the earlier illustrative reduced model.
+We tested all 36 combinations of three input pathways, three random seeds, two inhibition settings, and intact versus blocked mAL output. Repeating the comparison checks whether the effect survives changes in input randomness and inhibitory strength. It does not establish that the assumed cell identities, connection effects, or sensory inputs are biologically correct. Earlier exploratory experiments and model revisions are documented in the [full report](experiment/followup/RESULTS.md).
 
-## Original reduced-model data (retained for reference)
+## What happened
 
-124 selected MaleCNS v1.0 neurons (75 GABA-consensus mAL; 49 Fru+/Dsx+ pC1/P1-related), 1,106 measured connections representing 8,076 synapses, and actual anatomical coordinates. Inhibition is reduced to 10% with all cue inputs and thresholds fixed between conditions.
+![P1-related spike counts for male and female cues before and after mAL output block](experiment/followup/figures/cue-response-left.png)
 
-## Modeling limitations
+In the setting shown in the chart, male-cue responses rose from zero to 1–5 spikes across three trials after mAL output was blocked. Female-cue responses rose from 8–11 to 18–20 spikes. The second inhibition setting also showed an increase in male-cue responses.
 
-The sensory input encoding, neural dynamics, threshold, and nearest-eligible-target decoder are explicit assumptions. Both targets remain eligible under reduced inhibition; the nearer male is selected. This is **not evidence of preference reversal**. Flight, wing motion, and the mounting pose are illustrative kinematics, not independently predicted biomechanics. The anatomical body asset derives from female micro-CT and is used illustratively for all flies.
+**The model showed increased responsiveness to male cues, not male preference.** Female cues still produced stronger responses. The result depends on assumed connection effects, candidate cell identities, input encoding, and neuron dynamics; it is not a biological replication or a fruitless gene edit.
 
-The experiment is inspired by Kallman, Kim & Scott (2015), not a biological replication, a fruitless gene edit, or a reconstruction of their exact genetic driver line. See [MODEL.md](MODEL.md) and [assays.json](assays.json) for provenance and checks.
+## What you see
+
+The 10-second loop replays one 300 ms male-cue simulation. The connectome displays available anatomical neuron positions, with flashes from recorded 10 ms spike bins. Lime marks P1-related spikes; violet rings mark spikes in mAL neurons whose outgoing transmission is blocked. Colors, glow, and afterglow are visual effects.
+
+Fly movement is illustrative choreography: a nonzero recorded response makes a target eligible, and the nearer eligible target is male. The simulation does not predict the flight or mounting behavior. The chart shows paired neural responses across three seeds, rather than a probability of choosing a mate.
 
 ## Code
 
-- `main.js`: scene, playback, 10-second loop, rate-coded light pulses, minimal model notes.
-- `fly.js`: newly written loader and articulation for the anatomical assets.
-- `circuit.js`: fixed-parameter rate model and isolated control assays.
-- `index.html`: local entry point and model notes.
+- `main.js` — scene, camera, labels, and playback.
+- `fly.js` — anatomical fly loading and animation.
+- `connectome.js` — neuron positions and recorded spike effects.
+- `assets/` — fly meshes and playback data.
+- `experiment/followup/` — current experiments, results, and figures.
 
-The meshes/rig are NeuroMechFly / NeLy-EPFL assets, Apache-2.0; notices remain in `assets/fly/`. MaleCNS data is CC-BY. Three.js is MIT. All assets and code needed at runtime are served locally.
+See the [findings](experiment/followup/RESULTS.md), [protocol](experiment/followup/BOUNDED_ROUTE_PROTOCOL.md), and [reproduction notes](experiment/followup/README.md). Run `npm run check` for JavaScript syntax checks.
 
-Sources: https://male-cns.janelia.org/download/ · https://elifesciences.org/articles/11188 · https://github.com/NeLy-EPFL/fly-svg-maker
+The [initial pilot](experiment/README.md) and [original reduced model](MODEL.md) remain available as experiment history. `/experiment.html` displays the initial pilot recordings.
 
-## Current 10-second scene
+## Credits
 
-The main scene now uses `assets/playback.json`, exported without changes from the bounded follow-up recordings, and the actual soma coordinates in `experiment/positions.f32`. Both conditions and both input populations are included. The connectome always displays the male-candidate trial so the intervention comparison has a fixed input. Fly choreography uses a deliberately illustrative nonzero-response eligibility rule and selects the nearest eligible target; it is not a validated mating-choice decoder. Male labels are blue and Female labels pink. Violet mAL rings denote blocked transmission, not neuronal silence; P1 bursts only appear at recorded spike bins. The 300 ms neural trial is slowed to the 10-second animation.
+[MaleCNS](https://male-cns.janelia.org/download/) data: CC-BY. [NeuroMechFly / NeLy-EPFL](https://github.com/NeLy-EPFL/fly-svg-maker) meshes: Apache-2.0, notices in `assets/fly/`. [Three.js](https://threejs.org/): MIT. Inspired by [Kallman, Kim & Scott (2015)](https://elifesciences.org/articles/11188).
