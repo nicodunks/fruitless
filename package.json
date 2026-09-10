@@ -1,0 +1,14 @@
+{
+  "name": "fruitless",
+  "version": "1.0.0",
+  "description": "A minimal local Three.js courtship circuit visualization",
+  "scripts": {
+    "start": "python3 -m http.server 8000 --bind 127.0.0.1",
+    "check": "node --check main.js && node --check fly.js && node --check circuit.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.186.0"
+  },
+  "type": "module"
+}

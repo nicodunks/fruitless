@@ -1,0 +1,47 @@
+{
+  "assays": [
+    {
+      "mode": "baseline",
+      "maleP1": 0.2714745630793459,
+      "femaleP1": 0.800000000000019,
+      "maleCourtship": false,
+      "femaleCourtship": true
+    },
+    {
+      "mode": "perturbed",
+      "maleP1": 0.6500000000000085,
+      "femaleP1": 0.9799999999999988,
+      "maleCourtship": true,
+      "femaleCourtship": true
+    },
+    {
+      "mode": "restored",
+      "maleP1": 0.2714745630793459,
+      "femaleP1": 0.800000000000019,
+      "maleCourtship": false,
+      "femaleCourtship": true
+    },
+    {
+      "mode": "clamped",
+      "maleP1": 0,
+      "femaleP1": 0,
+      "maleCourtship": false,
+      "femaleCourtship": false
+    },
+    {
+      "mode": "no-target",
+      "maleP1": 0,
+      "femaleP1": 0,
+      "maleCourtship": false,
+      "femaleCourtship": false
+    }
+  ],
+  "validated": [
+    "real edge references and GABA consensus",
+    "restoration equality",
+    "output clamp zero",
+    "no target zero",
+    "assay does not mutate live simulation"
+  ],
+  "note": "Numerical software checks of selected schematic dynamics; not biological validation."
+}

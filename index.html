@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fruitless — a courtship circuit</title>
+<link rel="icon" href="data:,">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#091416;color:#e0e9e6;font:14px system-ui,sans-serif;overflow:hidden}canvas{display:block;width:100vw;height:100vh}button{font:12px system-ui;color:#b9cbc8;background:#152526d9;border:1px solid #314344;border-radius:4px;padding:9px 13px;cursor:pointer}button:hover,button:focus-visible{color:#fff;border-color:#8ba9a2;outline:none}#loading{position:fixed;inset:0;display:grid;place-content:center;background:#091416;color:#9eb6b0;letter-spacing:.15em;font:12px monospace;z-index:3}dialog{background:#112123;color:#d3dfdb;border:1px solid #415854;border-radius:8px;max-width:650px;max-height:85vh;padding:28px;line-height:1.6}dialog::backdrop{background:#020909cc}dialog h2{font-size:21px;margin:0 0 14px}dialog p{color:#acc2bd}dialog a{color:#c2d8a0}dialog pre{font:12px monospace;white-space:pre-wrap}dialog button{margin:4px 4px 4px 0}a{color:inherit}@media(max-width:700px){button{padding:8px;font-size:11px}#details{margin-left:0}}
+</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+<div id="loading">LOADING THE FLY</div>
+<canvas id="scene" aria-label="Three-dimensional courtship simulation with male and female targets and connectome activity"></canvas>
+<a id="details" href="#notes" style="position:fixed;bottom:22px;left:32px;color:#8c969f;font:12px system-ui;text-decoration:none;z-index:2">Model notes</a>
+<dialog id="notes"><h2>A courtship circuit, visualized.</h2><div id="model-notes"></div><p>Fly movement and the brief mounting pose are illustrative animation. They are driven by the model’s courtship output, not a biomechanical simulation. The target nearest to the subject is male: this scene demonstrates male-directed courtship, not a reversal of mate preference.</p><p>The anatomical body is NeuroMechFly, derived from female micro-CT data; the scene uses it as an illustrative body for all three flies. <a href="https://github.com/NeLy-EPFL/fly-svg-maker" target="_blank" rel="noreferrer">Asset source</a> · <a href="https://elifesciences.org/articles/11188" target="_blank" rel="noreferrer">Kallman, Kim & Scott (2015)</a></p><div><button data-mode="baseline">Intact inhibition</button><button data-mode="perturbed">Reduced inhibition</button><button data-mode="clamped">Clamp P1 output</button></div><pre id="assay"></pre><button id="download">Download evidence</button><button id="close">Close</button></dialog>
+<script type="module" src="./main.js"></script>
+</body></html>
