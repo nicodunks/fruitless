@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { createFly, animateFly } from './fly.js';
-import { createCircuit } from './circuit.js';
+import { createConnectome } from './connectome.js';
 
 const $ = id => document.getElementById(id);
 const duration = 10, canvas = $('scene');
@@ -40,9 +40,9 @@ const hudScene=new THREE.Scene(), hudCamera=new THREE.OrthographicCamera(-1,1,1,
 hudCamera.position.z=1;
 hudScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2,2),new THREE.MeshBasicMaterial({map:hudTexture,transparent:true,depthTest:false,depthWrite:false,toneMapped:false})));
 let w=innerWidth,h=innerHeight,split=.77,viewW=1,clock=0,last=0,mode='perturbed';
-let flies=[],model,data,context,trace=[],chosen=null,state=null,pointLayers=[],signalPaths=[],signalPoints,signalPositions;
+let flies=[],data,connectome,trace=[],chosen=null,state=null;
 const start=new THREE.Vector3(-5.8,0,-.3);
-const targets=[{sex:'male',position:new THREE.Vector3(1.4,0,-2),color:'#c8dbab'}, {sex:'female',position:new THREE.Vector3(3.3,0,3.5),color:'#c8d2da'}];
+const targets=[{sex:'male',position:new THREE.Vector3(1.4,0,-2),color:'#77b6ff'}, {sex:'female',position:new THREE.Vector3(3.3,0,3.5),color:'#f598c1'}];
 const smooth=x=>{x=THREE.MathUtils.clamp(x,0,1);return x*x*(3-2*x)};
 function resize(width=innerWidth,height=innerHeight){
  w=width;h=height;split=w<700?.70:.77;viewW=Math.round(w*split);
@@ -55,38 +55,11 @@ function resize(width=innerWidth,height=innerHeight){
 }
 addEventListener('resize',()=>resize());resize();
 
-function xyz(p){return new THREE.Vector3(p[0],-p[2],p[1]);}
-function pointsGeometry(points,transform){return new THREE.BufferGeometry().setFromPoints(points.map(p=>transform(xyz(p))));}
-function setupBrain(){
- const raw=Array.isArray(context)?context:(context.points||context.positions);
- const box=new THREE.Box3().setFromPoints(raw.map(xyz)),center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());
- const scale=2.8/Math.max(size.x,size.y,size.z);
- const transform=v=>v.sub(center).multiplyScalar(scale);
- const cloud=new THREE.Points(pointsGeometry(raw,transform),new THREE.PointsMaterial({color:'#839fa0',size:.012,transparent:true,opacity:.46,sizeAttenuation:true,depthWrite:false}));
- brain.add(cloud);
- for(const node of data.nodes){
-  const pts=node.points?.length?node.points:[node.position];
-  if(!pts[0])continue;
-  const material=new THREE.PointsMaterial({color:node.group==='mAL'?'#d99e70':'#c2eca2',size:.024,transparent:true,opacity:.7,depthWrite:false,blending:THREE.NormalBlending,toneMapped:false});
-  const layer=new THREE.Points(pointsGeometry(pts,transform),material);brain.add(layer);pointLayers.push({node,material,phase:(node.id%97)/97,flash:0});
- }
-
- // Rate-coded light pulses along verified connections; paths are visual guides.
- const lookup=new Map(data.nodes.map(n=>[n.id,n]));
- signalPaths=[...data.edges].sort((a,b)=>b.weight-a.weight).slice(0,220).map((e,i)=>{
-  const a=transform(xyz(lookup.get(e.source).position)),b=transform(xyz(lookup.get(e.target).position));
-  const mid=a.clone().lerp(b,.5);mid.z+=.08;
-  return {source:e.source,curve:new THREE.QuadraticBezierCurve3(a,mid,b),phase:(i*.6180339)%1};
- });
- signalPositions=new Float32Array(signalPaths.length*3);
- const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.BufferAttribute(signalPositions,3));
- signalPoints=new THREE.Points(geometry,new THREE.PointsMaterial({color:'#fff1ba',size:.025,transparent:true,opacity:.95,depthWrite:false,blending:THREE.AdditiveBlending,toneMapped:false}));brain.add(signalPoints);
-}
-function reset(){clock=0;last=0;chosen=null;trace=[];model?.reset();if(flies[0])flies[0].position.copy(start);}
+function reset(){clock=0;last=0;chosen=null;trace=[];if(flies[0])flies[0].position.copy(start);}
 function update(dt){
- state=model.step({dt,maleCue:1,femaleCue:1,mode,targetPresent:true});
+ state=data.trials[mode];
  if(clock>1&&!chosen){
-  const eligible=targets.filter(t=>state[t.sex].courtship);
+  const eligible=targets.filter(t=>state[t.sex].spikes>0);
   chosen=eligible.sort((a,b)=>a.position.distanceTo(start)-b.position.distanceTo(start))[0]||null;
  }
  const subject=flies[0],t=clock*2.5;
@@ -116,23 +89,8 @@ function update(dt){
  camera.lookAt(-.2+.55*push,.6+.15*push,-.15*push);
  animateFly(subject,clock,airborne,wing);
  brain.rotation.y=.12*Math.sin(t*.16);brain.rotation.z=.04;
- const acts=state[chosen?.sex||'male'].activities;
- pointLayers.forEach(layer=>{
-  const v=THREE.MathUtils.clamp(Number(acts?.[layer.node.id])||0,0,1);
-  layer.phase+=dt*v*(2+(layer.node.id%7)*.3);
-  if(layer.phase>=1){layer.phase%=1;layer.flash=1;}
-  layer.flash*=Math.exp(-dt*9);
-  layer.material.opacity=.08+.42*v+.5*layer.flash;
-  layer.material.size=.006+.008*v+.01*layer.flash;
- });
- signalPaths.forEach((p,i)=>{
-  const activity=Number(acts?.[p.source])||0;
-  p.phase=(p.phase+dt*activity*.7)%1;
-  const v=p.curve.getPoint(p.phase);if(activity<.01)v.set(100,100,100);
-  v.toArray(signalPositions,i*3);
- });
- signalPoints.geometry.attributes.position.needsUpdate=true;
- if(trace.length===0||t-trace.at(-1).time>.1)trace.push({time:+t.toFixed(3),male:state.male.p1,female:state.female.p1,target:chosen?.sex||null,position:subject.position.toArray()});
+ connectome.update(clock,mode);
+ if(trace.length===0||clock-trace.at(-1).time>.1)trace.push({time:+clock.toFixed(3),male:state.male.spikes,female:state.female.spikes,target:chosen?.sex||null,position:subject.position.toArray()});
 }
 function text(str,x,y,size=13,color='#c9d7d2',align='left',font='system-ui'){
  ctx.font=`${size}px ${font}`;ctx.fillStyle=color;ctx.textAlign=align;ctx.fillText(str,x,y);
@@ -151,21 +109,20 @@ function drawHud(){
  text('FRUITLESS',pad,40,14,'#e3e9df','left','monospace');
  text('A COURTSHIP CIRCUIT',pad,61,small,'#8fa6a1','left','monospace');
  text('CONNECTOME',viewW+pad*.65,40,small,'#d3e1d9','left','monospace');
- text('Modeled activity',viewW+pad*.65,62,small,'#829c99');
+ text(mode==='perturbed'?'mAL OUTPUT BLOCKED':'mAL OUTPUT INTACT',viewW+pad*.65,62,w<700?9:11,mode==='perturbed'?'#bd9bff':'#e7af7c','left','monospace');
  if(flies.length){
   label(flies[1],'Male',targets[0].color,-7);label(flies[2],'Female',targets[1].color,0);
-  if(clock<3.2)label(flies[0],'Male · subject','#e4e9db',-5);
+  if(clock<3.2)label(flies[0],'Male · subject',targets[0].color,-5);
  }
  const status=!chosen?'Observing':clock<6.8?'Approaching male':'Courtship';
  const actual=chosen?.sex==='female'?status.replace('male','female'):status;
- canvas.setAttribute('aria-label',`${actual}. ${mode} condition. Target: ${chosen?.sex||'none'}. Male response ${state?.male.p1.toFixed(3)||'0'}, female response ${state?.female.p1.toFixed(3)||'0'}.`);
+ canvas.setAttribute('aria-label',`${actual}. ${mode} condition. Target: ${chosen?.sex||'none'}. Male response ${state?.male.spikes||'0'}, female response ${state?.female.spikes||'0'}.`);
 
  const rx=viewW+pad*.65,rwidth=w-viewW-pad*1.3;
- ctx.fillStyle='#c6dbab';ctx.fillRect(rx,h-134,5,5);text('P1-related',rx+13,h-128,small,'#b4c7b2');
- ctx.fillStyle='#d9ac85';ctx.fillRect(rx,h-108,5,5);text('mAL',rx+13,h-102,small,'#b4c7b2');
- const value=state?state.male.p1:0;
- ctx.fillStyle='#304341';ctx.fillRect(rx,h-80,rwidth,2);ctx.fillStyle='#c6dbab';ctx.fillRect(rx,h-80,rwidth*THREE.MathUtils.clamp(value,0,1),2);
- text(`${data?.nodes.length||0} modeled neurons`,rx,h-49,w<700?9:11,'#6f8e88');
+ ctx.fillStyle='#caff75';ctx.fillRect(rx,h-134,5,5);text('P1 spikes',rx+13,h-128,small,'#caff75');
+ ctx.fillStyle='#d9ffc1';ctx.fillRect(rx,h-108,5,5);text('Recorded spikes',rx+13,h-102,small,'#b4c7b2');
+ ctx.fillStyle=mode==='perturbed'?'#bd9bff':'#e7af7c';ctx.fillRect(rx,h-82,5,5);text(mode==='perturbed'?'mAL · output blocked':'mAL · intact',rx+13,h-76,small,mode==='perturbed'?'#bd9bff':'#e7af7c');
+ text('166,606 neurons',rx,h-49,w<700?9:11,'#6f8e88');
 
  hudTexture.needsUpdate=true;
 }
@@ -184,13 +141,14 @@ function frame(now){
 function saveBlob(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
 $('details').onclick=()=>{$('notes').showModal()};$('close').onclick=()=>$('notes').close();
 document.querySelectorAll('[data-mode]').forEach(button=>button.onclick=()=>{mode=button.dataset.mode;reset();$('notes').close();});
-$('download').onclick=()=>saveBlob(new Blob([JSON.stringify({mode,assays:model.assay(),trajectory:trace,circuit:data},null,2)],{type:'application/json'}),'fruitless-evidence.json');
+$('download').onclick=()=>saveBlob(new Blob([JSON.stringify({mode,recording:data,trajectory:trace},null,2)],{type:'application/json'}),'fruitless-evidence.json');
 try{
- [flies,data,context]=await Promise.all([Promise.all([createFly('./assets/fly'),createFly('./assets/fly'),createFly('./assets/fly')]),fetch('./assets/circuit.json').then(r=>{if(!r.ok)throw Error('Circuit data unavailable');return r.json()}),fetch('./assets/context.json').then(r=>r.json())]);
+ let raw;
+ [flies,data,raw]=await Promise.all([Promise.all([createFly('./assets/fly'),createFly('./assets/fly'),createFly('./assets/fly')]),fetch('./assets/playback.json').then(r=>{if(!r.ok)throw Error('Recording unavailable');return r.json()}),fetch('./experiment/positions.f32').then(r=>{if(!r.ok)throw Error('Anatomy unavailable');return r.arrayBuffer()})]);
  flies.forEach((fly,i)=>{fly.scale.setScalar(i===2?.59:.55);scene.add(fly);if(i)fly.position.copy(targets[i-1].position)});
- model=createCircuit(data);setupBrain();reset();update(1/60);
- $('model-notes').innerHTML=`<p>${data.nodes.length} neurons and ${data.edges.length} measured connections from MaleCNS v1.0. The intervention reduces modeled inhibition from GABA-consensus mAL neurons onto Fru+/Dsx+ pC1 (P1-related) neurons. This is a hypothesis model inspired by Kallman, Kim & Scott (2015), not a replication of a fruitless mutation or the paper’s exact genetic driver line.</p><p>Synapse counts and anatomical coordinates are data. Neural rates, cue encoding, thresholds, and movement are assumptions. Male/female excitation is fixed at 0.75/1; inhibitory input at 1/0.2. Reduced inhibition scales outgoing inhibition to 10%. Courtship threshold: 0.35. These settings are shared across conditions.</p><p>The dim point cloud shows real CNS soma positions. Only the colored selected circuit carries modeled activity. Traveling pulses and flashes encode model rates; they are illustrative signals, not simulated action potentials or measured conduction paths.</p>`;
- $('assay').textContent='Model response       Male    Female\n'+model.assay().map(r=>`${r.mode.padEnd(20)} ${r.maleP1.toFixed(3)}   ${r.femaleP1.toFixed(3)}`).join('\n');
+ connectome=createConnectome(brain,new Float32Array(raw),data);reset();update(1/60);
+ $('model-notes').innerHTML=`<p>The right panel replays the full-network bounded experiment: candidate male input, seed 11, inhibitory reversal −70 mV. Its 300 ms recording is slowed to a 10-second loop. Anatomy shows 139,659 available soma positions; all 166,606 classified neurons were included in the experiment.</p><p>Mint flashes represent recorded 10 ms spike bins. Bright lime bursts mark recorded spikes in the eight-cell P1-related readout. Violet crossed rings identify recorded spikes in mAL cells whose outgoing transmission is blocked: these cells can still spike, but their output has no effect in the model. The rings and afterglow are display symbols, not measured propagation.</p><p>Both transmitter overrides and cell identities remain assumptions. Blocking mAL enabled a small male-candidate response; female-candidate responses remained stronger. <a href="experiment/followup/RESULTS.md">Full findings and limitations</a>.</p>`;
+ $('assay').textContent='P1-related spike totals (250 ms)\n                  Male    Female\nIntact              0        11\nOutput blocked      4        18';
  $('loading').remove();
  requestAnimationFrame(frame);
 }catch(error){$('loading').textContent=`Demo couldn't load: ${error.message}`;console.error(error);}
